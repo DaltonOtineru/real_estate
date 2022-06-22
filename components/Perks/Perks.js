@@ -50,9 +50,9 @@ const Perks = () => {
   };
 
   return (
-    <div className="max-w-[1400px] grid grid-cols-12 px-4 py-20 mx-auto">
+    <section className="max-w-[1400px] grid grid-cols-12 px-4 py-20 mx-auto">
       {renderPerks()}
-    </div>
+    </section>
   );
 };
 

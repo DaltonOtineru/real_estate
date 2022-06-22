@@ -11,7 +11,13 @@ module.exports = {
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        background: 'var(--background)',
+        accent: 'var(--accent)',
+        primary: 'var(--primary)',
+        muted: 'var(--muted)',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-bg-patterns')],
 };

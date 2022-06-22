@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .theme__light {
+
+} */
+
+@layer base {
+  .dark {
+    --background: #1c1c1c;
+    --accent: #52898a;
+    --primary: #dfdede;
+    --muted: #a7a7a7;
+  }
+  .light {
+    --background: #fff;
+    --accent: #52898a;
+    --primary: #000;
+    --muted: #242424;
+  }
+}

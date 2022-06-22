@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Transactions from '../components/HardWorking/HardWorking';
 import Hero from '../components/Hero/Hero';
 import Navigation from '../components/Navigation/Navigation';
 import Perks from '../components/Perks/Perks';
@@ -18,10 +19,11 @@ export default function Home() {
         />
       </Head>
       {/* className="h-6 w-6 lg:hidden cursor-pointer" */}
-      <main className="dark:bg-[#1C1C1C] w-full h-full font-sans">
+      <main className="dark:bg-background w-full h-full font-sans">
         <Navigation />
         <Hero />
         <Perks />
+        <Transactions />
       </main>
     </div>
   );

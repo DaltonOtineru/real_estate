@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import NavLink from './NavLink';
 import { BsHouseFill } from 'react-icons/bs';
 import { RiSunFill } from 'react-icons/ri';
@@ -6,14 +6,30 @@ import { RiSunFill } from 'react-icons/ri';
 import { MenuAlt2Icon } from '@heroicons/react/solid';
 
 const Navigation = () => {
+  const [shadow, setShadow] = useState(false);
+
+  useEffect(() => {
+    const handleShow = () => {
+      if (window.scrollY >= 50) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener('scroll', handleShow);
+  }, []);
+
   return (
-    <header className="w-full bg-transparent p-4 fixed z-50 top-0 left-0">
+    <header
+      className={`w-full p-4 fixed z-50 top-0 left-0 transition duration-200 ${
+        shadow ? 'bg-background shadow-3xl bg-opacity-60' : 'bg-transparent'
+      }`}
+    >
       <div className="flex justify-between max-w-[1500px] mx-auto">
         <div className="space-x-10 flex items-center">
           <div className="flex items-center space-x-2 text-white">
             <MenuAlt2Icon className="h-7 w-7  lg:hidden rounded cursor-pointer bg-[#333] text-white" />
             <a href="/" className="flex items-center space-x-2 text-2xl h-full">
-              <BsHouseFill className="" />
               <span>Berkshire Hathaway</span>
             </a>
           </div>
