@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 
 const Navigation = () => {
   const [shadow, setShadow] = useState(false);
+  const [darkShadow, setDarkShadow] = useState(false);
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme, theme } = useTheme();
 
@@ -26,9 +27,10 @@ const Navigation = () => {
   useEffect(() => {
     const handleShow = () => {
       if (window.scrollY >= 50) {
-        setShadow(true);
+        resolvedTheme === 'dark' ? setDarkShadow(true) : setShadow(true);
       } else {
         setShadow(false);
+        setDarkShadow(false);
       }
     };
     window.addEventListener('scroll', handleShow);
@@ -39,8 +41,10 @@ const Navigation = () => {
   return (
     <header
       className={`w-full p-4 fixed z-50 top-0 left-0 transition duration-500 ${
-        shadow ? 'bg-background shadow-3xl bg-opacity-60' : 'bg-transparent'
-      }`}
+        darkShadow && 'bg-[#333] shadow-2xl bg-opacity-100'
+      }
+        ${shadow && 'bg-white shadow-2xl'}
+        `}
     >
       <div className="flex justify-between max-w-[1500px] mx-auto">
         <div className="space-x-10 flex items-center">
@@ -58,12 +62,12 @@ const Navigation = () => {
           </nav>
         </div>
         <div className="space-x-2 flex items-center text-md">
-          <button className="bg-[#333] text-white rounded-md py-2.5 px-4 hover:bg-[#3f3f3f] ease duration-300">
+          <button className="bg-[#1c1c1c] dark:bg-white/80 text-white dark:text-[#333] rounded-md py-2.5 px-4 hover:bg-[#3f3f3f] ease duration-300">
             Login
           </button>
           {mounted && (
             <div
-              className={`bg-[#333] flex items-center px-0.5 rounded-full h-7 w-12 cursor-pointer flex-shrink-0 relative  ${
+              className={`bg-[#1c1c1c] dark:bg-white/80 flex items-center px-0.5 rounded-full h-7 w-12 cursor-pointer flex-shrink-0 relative  ${
                 resolvedTheme === 'dark' ? 'justify-end' : 'justify-start'
               }`}
               onClick={() =>
@@ -72,7 +76,7 @@ const Navigation = () => {
             >
               <span className="absolute left-0">🌜</span>
               <motion.div
-                className="w-5 h-5 bg-white rounded-full z-40"
+                className="w-5 h-5 bg-white dark:bg-[#333] rounded-full z-40"
                 layout
                 transition={spring}
               />

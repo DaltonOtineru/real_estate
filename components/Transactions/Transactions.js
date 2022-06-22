@@ -12,7 +12,7 @@ const Transactions = () => {
             height={350}
             width={500}
             objectFit="cover"
-            className="rounded-lg"
+            className="rounded-lg shadow-xl"
             alt="Berkshire Team"
           />
         </div>

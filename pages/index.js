@@ -6,6 +6,8 @@ import Perks from '../components/Perks/Perks';
 import HardWorking from '../components/HardWorking/HardWorking';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import Toolbreak from '../components/Toolbreak/Toolbreak';
+import Footer from '../components/Footer/Footer';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -29,14 +31,17 @@ export default function Home() {
         />
       </Head>
 
-      {/* className="h-6 w-6 lg:hidden cursor-pointer" */}
-      <main className="bg-[#dfdede] dark:bg-background w-full h-full font-sans">
-        <Navigation />
-        <Hero />
-        <HardWorking />
-        <Transactions />
-        <Perks />
-      </main>
+      {mounted && (
+        <main className="bg-[#dfdede] dark:bg-background w-full h-full font-sans ">
+          <Navigation />
+          <Hero />
+          <HardWorking />
+          <Transactions />
+          <Perks />
+          <Toolbreak />
+          <Footer />
+        </main>
+      )}
     </div>
   );
 }

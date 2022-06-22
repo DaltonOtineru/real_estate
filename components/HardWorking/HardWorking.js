@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 
@@ -26,22 +25,19 @@ const HardWorking = () => {
             We have Residential, Commercial, and Rental specialists ready to
             walk you through the process, no matter your needs.
           </blockquote>
-          {/* <button>Hello</button> */}
           <button className="rounded-md bg-[#f3f3f3] text-[#121212] py-3 px-4 mr-3 border-transparent border-2 hover:bg-transparent hover:border-[#f3f3f3] hover:text-[#f3f3f3] duration-300 font-medium max-w-[fit-content] flex items-center">
-            Find An Agent <BsArrowRight className="inline ml-3" />
+            Find An Agent
+            <BsArrowRight className="inline ml-3" />
           </button>
         </div>
         <div className="hidden lg:flex col-span-6 p-5 justify-center">
-          <div className="h-[300px] w-[300px] relative rounded-xl overflow-hidden shadow-xl">
-            <Image
-              src={'/../public/text.png'}
-              // height={300}
-              // width={300}
-              layout="fill"
-              // className="rounded-xl overflow-hidden shadow-xl"
-              objectFit="contain"
-            />
-          </div>
+          <Image
+            src={'/../public/text.png'}
+            height={300}
+            width={300}
+            className="rounded-xl shadow-xl"
+            objectFit="contain"
+          />
         </div>
       </div>
     </section>
@@ -49,13 +45,3 @@ const HardWorking = () => {
 };
 
 export default HardWorking;
-
-{
-  /* <a
-  className="dark:text-[#dfdede] dark:opacity-[.37] dark:hover:opacity-[.87] group dark:group-hover:[.87]"
-  href="/"
->
-  Find An Agent
-  <BsArrowRight className="dark:text-[#dfdede] dark:opacity-[.37] dark:hover:opacity-[.87] group dark:group-hover:[.87]" />
-</a> */
-}

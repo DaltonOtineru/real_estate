@@ -16,3 +16,15 @@
     --muted: #242424;
   }
 }
+
+@layer components {
+  .footer__section {
+    @apply flex flex-col items-start justify-center col-span-6 lg:col-span-3 text-left pb-4 lg:pb-0;
+  }
+  .footer__header {
+    @apply pb-2 font-bold dark:text-white dark:opacity-[.87];
+  }
+  .footer__link {
+    @apply py-1 lg:py-2 text-black/70 hover:opacity-50 dark:text-white dark:opacity-[.37] dark:hover:opacity-[.65] cursor-pointer;
+  }
+}
