@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .theme__light {
-
-} */
-
 @layer base {
   .dark {
     --background: #1c1c1c;

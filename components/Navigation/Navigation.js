@@ -2,11 +2,26 @@ import React, { useEffect, useState } from 'react';
 import NavLink from './NavLink';
 import { BsHouseFill } from 'react-icons/bs';
 import { RiSunFill } from 'react-icons/ri';
-
 import { MenuAlt2Icon } from '@heroicons/react/solid';
+import { useTheme } from 'next-themes';
+import { motion } from 'framer-motion';
 
 const Navigation = () => {
   const [shadow, setShadow] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const { setTheme, resolvedTheme, theme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  console.log('the current theme is: ', theme);
+
+  const spring = {
+    type: 'spring',
+    stiffness: 700,
+    damping: 30,
+  };
 
   useEffect(() => {
     const handleShow = () => {
@@ -19,9 +34,11 @@ const Navigation = () => {
     window.addEventListener('scroll', handleShow);
   }, []);
 
+  if (!mounted) return null;
+
   return (
     <header
-      className={`w-full p-4 fixed z-50 top-0 left-0 transition duration-200 ${
+      className={`w-full p-4 fixed z-50 top-0 left-0 transition duration-500 ${
         shadow ? 'bg-background shadow-3xl bg-opacity-60' : 'bg-transparent'
       }`}
     >
@@ -44,9 +61,28 @@ const Navigation = () => {
           <button className="bg-[#333] text-white rounded-md py-2.5 px-4 hover:bg-[#3f3f3f] ease duration-300">
             Login
           </button>
-          <button className="bg-[#333] text-white rounded-md text-xl p-3 hover:bg-[#3f3f3f] ease duration-300">
-            <RiSunFill />
-          </button>
+          {mounted && (
+            <div
+              className={`bg-[#333] flex items-center px-0.5 rounded-full h-7 w-12 cursor-pointer flex-shrink-0 relative  ${
+                resolvedTheme === 'dark' ? 'justify-end' : 'justify-start'
+              }`}
+              onClick={() =>
+                setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
+              }
+            >
+              <span className="absolute left-0">🌜</span>
+              <motion.div
+                className="w-5 h-5 bg-white rounded-full z-40"
+                layout
+                transition={spring}
+              />
+
+              <span className="absolute right-0.5">🌞</span>
+            </div>
+          )}
+          {/* <button className="bg-[#333] text-white rounded-md text-xl p-3 hover:bg-[#3f3f3f] ease duration-300">
+            <RiSunFill /> */}
+          {/* </button> */}
         </div>
       </div>
     </header>

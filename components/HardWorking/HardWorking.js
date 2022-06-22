@@ -1,42 +1,61 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
+import { BsArrowRight } from 'react-icons/bs';
 
-const Transactions = () => {
+const HardWorking = () => {
   return (
     <section className="w-full py-16 px-4">
-      <div className="mx-auto max-w-[1300px] grid grid-cols-12">
-        <div className="hidden lg:flex col-span-6 relative p-5 ">
-          <Image
-            src={'/../public/team.jpeg'}
-            // layout="fill"
-            height={350}
-            width={500}
-            objectFit="cover"
-            className="rounded-lg"
-            alt="Berkshire Team"
-          />
-        </div>
-        <div className="col-span-12 lg:col-span-6 px-2 lg:p-5 space-y-3">
-          <h3 className="text-muted font-bold text-sm">
-            Smooth Real Estate Transactions
+      <div className="grid grid-cols-12 mx-auto max-w-[1300px]">
+        <div className="flex flex-col col-span-12 lg:col-span-6 p-5">
+          <h3 className="text-sm dark:text-[#a7a7a7] font-bold">
+            Hard Working Agents
           </h3>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-primary leading-normal">
-            Our Office Staff Is Dedicated To{' '}
-            <span className="text-accent">Smooth</span> Real Estate Transactions
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold dark:text-[#dfdede] leading-normal py-3">
+            Real Estate Is <span className="text-[#52898a]">Simple</span> With A
+            Berkshire Hathaway Real Estate Professional
           </h2>
-          <p className="text-md text-muted leading-relaxed pb-2 lg:py-4">
-            We not only have have residential, commercial, and land specialists
-            walking you through the deal, we have a full office staff working
-            together with our Realtors.
+          <p className="dark:text-[#a7a7a7] text-md leading-relaxed">
+            We have been helping San Diego Families Buy and Sell Real Estate for
+            over 25 years. We would love to serve you too.
           </p>
-          <blockquote className="text-accent text-lg md:text-xl lg:text-lg font-semibold border-accent border-l-8 pl-2 leading-relaxed ">
-            More eyes on the deal means fewer mistakes and efficient execution
-            of the nitty gritty details.
+          <h6 className="dark:text-[#dfdede] text-md font-semibold pt-3">
+            Connect With Us
+          </h6>
+          <blockquote className="dark:text-[#a7a7a7] text-sm leading-relaxed pb-3 ">
+            We have Residential, Commercial, and Rental specialists ready to
+            walk you through the process, no matter your needs.
           </blockquote>
+          {/* <button>Hello</button> */}
+          <button className="rounded-md bg-[#f3f3f3] text-[#121212] py-3 px-4 mr-3 border-transparent border-2 hover:bg-transparent hover:border-[#f3f3f3] hover:text-[#f3f3f3] duration-300 font-medium max-w-[fit-content] flex items-center">
+            Find An Agent <BsArrowRight className="inline ml-3" />
+          </button>
+        </div>
+        <div className="hidden lg:flex col-span-6 p-5 justify-center">
+          <div className="h-[300px] w-[300px] relative rounded-xl overflow-hidden shadow-xl">
+            <Image
+              src={'/../public/text.png'}
+              // height={300}
+              // width={300}
+              layout="fill"
+              // className="rounded-xl overflow-hidden shadow-xl"
+              objectFit="contain"
+            />
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Transactions;
+export default HardWorking;
+
+{
+  /* <a
+  className="dark:text-[#dfdede] dark:opacity-[.37] dark:hover:opacity-[.87] group dark:group-hover:[.87]"
+  href="/"
+>
+  Find An Agent
+  <BsArrowRight className="dark:text-[#dfdede] dark:opacity-[.37] dark:hover:opacity-[.87] group dark:group-hover:[.87]" />
+</a> */
+}
