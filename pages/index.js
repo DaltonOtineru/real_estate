@@ -8,9 +8,14 @@ import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import Toolbreak from '../components/Toolbreak/Toolbreak';
 import Footer from '../components/Footer/Footer';
+import { fetchApi, baseUrl } from '../utils/fetchApi';
+import axios from 'axios';
+import FeaturedHomes from '../components/FeaturedHomes/FeaturedHomes';
+import Layout from '../components/Layout/Layout';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
+  const [homes, setHomes] = useState([]);
   const { setTheme, resolvedTheme, theme } = useTheme();
 
   useEffect(() => {
@@ -32,16 +37,28 @@ export default function Home() {
       </Head>
 
       {mounted && (
-        <main className="bg-[#dfdede] dark:bg-background w-full h-full font-sans ">
-          <Navigation />
-          <Hero />
-          <HardWorking />
-          <Transactions />
-          <Perks />
-          <Toolbreak />
-          <Footer />
+        <main className="bg-[#dfdede] dark:bg-background w-full h-full font-sans overflow-hidden">
+          <Layout>
+            <Hero />
+            <FeaturedHomes />
+            <HardWorking />
+            <Transactions />
+            <Perks />
+            <Toolbreak />
+          </Layout>
         </main>
       )}
     </div>
   );
 }
+
+// export async function getStaticProps() {
+//   const featuredHomes = await fetchApi(
+//     `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=8`
+//   );
+//   return {
+//     props: {
+//       featuredHomes: featuredHomes?.hits,
+//     },
+//   };
+// }

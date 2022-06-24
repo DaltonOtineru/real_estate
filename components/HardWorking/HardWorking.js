@@ -30,12 +30,13 @@ const HardWorking = () => {
             <BsArrowRight className="inline ml-3" />
           </button>
         </div>
-        <div className="hidden lg:flex col-span-6 p-5 justify-center">
+        <div className="hidden lg:flex col-span-6 p-5 justify-center text__wrap rounded-xl relative">
           <Image
             src={'/../public/text.png'}
             height={300}
             width={300}
-            className="rounded-xl shadow-xl"
+            // layout="fill"
+            // className="rounded-xl shadow-xl"
             objectFit="contain"
           />
         </div>

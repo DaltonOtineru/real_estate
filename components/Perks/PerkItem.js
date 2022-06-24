@@ -1,7 +1,6 @@
 import React from 'react';
 
 const PerkItem = ({ Icon, title, text }) => {
-  console.log('FOOO');
   return (
     <div className="px-4 flex col-span-12 sm:col-span-6 lg:col-span-3 space-x-2 mb-12 lg:mb-0 items-start">
       <div className=" ">
