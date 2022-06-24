@@ -2,19 +2,24 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaBed, FaBath, FaRuler } from 'react-icons/fa';
+import { listingData } from '../../data/listingsData';
 
 const FeaturedHome = ({ listing }) => {
   const { _id, address, zip_code, price, beds, baths, sq, time, coverPhoto } =
     listing;
-  console.log(coverPhoto);
+  console.log(_id);
   return (
-    <Link href="/" className="!cursor-pointer">
+    <Link
+      href={`/listing/[listingId]`}
+      as={`listing/${_id}`}
+      className="!cursor-pointer"
+    >
       <div className="mx-auto flex flex-col cursor-pointer max-w-[305px] justify-center">
         <div className="home__wrap relative w-full h-full rounded-md overflow-hidden duration-200">
           <Image
             src={coverPhoto}
-            height={166}
-            width={305}
+            height={216}
+            width={405}
             objectFit="cover"
             className="hover:scale-105 duration-200"
           />

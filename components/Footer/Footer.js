@@ -3,7 +3,7 @@ import FooterLink from './FooterLink';
 
 const Footer = () => {
   return (
-    <footer className="w-full">
+    <footer className="w-full mt-auto">
       <div className="grid grid-cols-12 max-w-[90%] lg:max-w-[900px] mx-auto py-12">
         <div className="footer__section">
           <div className="lg:mx-auto flex flex-col">

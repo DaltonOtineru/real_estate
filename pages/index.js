@@ -7,13 +7,11 @@ import HardWorking from '../components/HardWorking/HardWorking';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import Toolbreak from '../components/Toolbreak/Toolbreak';
-import Footer from '../components/Footer/Footer';
-import { fetchApi, baseUrl } from '../utils/fetchApi';
-import axios from 'axios';
 import FeaturedHomes from '../components/FeaturedHomes/FeaturedHomes';
 import Layout from '../components/Layout/Layout';
+import { listingData } from '../data/listingsData';
 
-export default function Home() {
+export default function Home({ listingData }) {
   const [mounted, setMounted] = useState(false);
   const [homes, setHomes] = useState([]);
   const { setTheme, resolvedTheme, theme } = useTheme();
@@ -40,7 +38,7 @@ export default function Home() {
         <main className="bg-[#dfdede] dark:bg-background w-full h-full font-sans overflow-hidden">
           <Layout>
             <Hero />
-            <FeaturedHomes />
+            <FeaturedHomes listingData={listingData} />
             <HardWorking />
             <Transactions />
             <Perks />
@@ -52,13 +50,10 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-//   const featuredHomes = await fetchApi(
-//     `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=8`
-//   );
-//   return {
-//     props: {
-//       featuredHomes: featuredHomes?.hits,
-//     },
-//   };
-// }
+export const getStaticProps = async () => {
+  return {
+    props: {
+      listingData: listingData,
+    },
+  };
+};

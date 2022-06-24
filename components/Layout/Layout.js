@@ -5,9 +5,11 @@ import Navigation from '../Navigation/Navigation';
 const Layout = ({ children }) => {
   return (
     <>
-      <Navigation />
-      {children}
-      <Footer />
+      <section className="min-h-screen flex flex-col">
+        <Navigation />
+        {children}
+        <Footer />
+      </section>
     </>
   );
 };
