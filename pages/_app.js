@@ -1,8 +1,9 @@
 import '../styles/globals.css';
 import { ThemeProvider, useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { SessionProvider } from 'next-auth/react';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme, theme } = useTheme();
 
@@ -13,9 +14,11 @@ function MyApp({ Component, pageProps }) {
     return null;
   }
   return (
-    <ThemeProvider attribute="class">
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <SessionProvider session={session}>
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </SessionProvider>
   );
 }
 

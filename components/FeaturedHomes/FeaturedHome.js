@@ -61,5 +61,3 @@ const FeaturedHome = ({ listing }) => {
 };
 
 export default FeaturedHome;
-
-// #6EA679

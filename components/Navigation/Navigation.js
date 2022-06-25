@@ -1,28 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import NavLink from './NavLink';
-import { BsHouseFill } from 'react-icons/bs';
 import { RiSunFill } from 'react-icons/ri';
 import { MenuAlt2Icon } from '@heroicons/react/solid';
 import { useTheme } from 'next-themes';
-import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { useSession, signIn, signOut } from 'next-auth/react';
 
 const Navigation = () => {
   const [shadow, setShadow] = useState(false);
   const [darkShadow, setDarkShadow] = useState(false);
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme, theme } = useTheme();
+  const { data: session } = useSession();
 
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  console.log('the current theme is: ', theme);
-
-  const spring = {
-    type: 'spring',
-    stiffness: 700,
-    damping: 30,
-  };
 
   useEffect(() => {
     const handleShow = () => {
@@ -62,31 +55,25 @@ const Navigation = () => {
           </nav>
         </div>
         <div className="space-x-2 flex items-center text-md">
-          <button className="bg-[#1c1c1c] dark:bg-white/80 text-white dark:text-[#333] rounded-md py-2.5 px-4 hover:bg-[#3f3f3f] ease duration-300">
-            Login
-          </button>
-          {mounted && (
-            <div
-              className={`bg-[#1c1c1c] dark:bg-white/80 flex items-center px-0.5 rounded-full h-7 w-12 cursor-pointer flex-shrink-0 relative  ${
-                resolvedTheme === 'dark' ? 'justify-end' : 'justify-start'
-              }`}
-              onClick={() =>
-                setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
-              }
+          {!session ? (
+            <Link href="signin">
+              <button className="bg-[#1c1c1c] dark:bg-white/80 text-white dark:text-[#333] rounded-md py-2.5 px-4 hover:bg-[#3f3f3f] ease duration-300">
+                Login
+              </button>
+            </Link>
+          ) : (
+            <button
+              className="bg-[#1c1c1c] dark:bg-white/80 text-white dark:text-[#333] rounded-md py-2.5 px-4 hover:bg-[#3f3f3f] ease duration-300"
+              onClick={() => signOut()}
             >
-              <span className="absolute left-0">🌜</span>
-              <motion.div
-                className="w-5 h-5 bg-white dark:bg-[#333] rounded-full z-40"
-                layout
-                transition={spring}
-              />
-
-              <span className="absolute right-0.5">🌞</span>
-            </div>
+              Logout
+            </button>
           )}
-          {/* <button className="bg-[#333] text-white rounded-md text-xl p-3 hover:bg-[#3f3f3f] ease duration-300">
-            <RiSunFill /> */}
-          {/* </button> */}
+          {mounted && (
+            <button className="bg-[#333] text-white rounded-md text-xl p-3 hover:bg-[#3f3f3f] ease duration-300">
+              <RiSunFill />
+            </button>
+          )}
         </div>
       </div>
     </header>

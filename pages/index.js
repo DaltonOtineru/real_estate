@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Transactions from '../components/Transactions/Transactions';
 import Hero from '../components/Hero/Hero';
-import Navigation from '../components/Navigation/Navigation';
 import Perks from '../components/Perks/Perks';
 import HardWorking from '../components/HardWorking/HardWorking';
 import { useTheme } from 'next-themes';
