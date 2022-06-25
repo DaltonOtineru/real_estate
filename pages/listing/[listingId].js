@@ -1,15 +1,18 @@
+import Image from 'next/image';
 import React from 'react';
 import Layout from '../../components/Layout/Layout';
+import ListingDescription from '../../components/ListingDetails/ListingDescription';
 import ListingDetailsNav from '../../components/ListingDetails/ListingDetailsNav';
+import ListingPhotoGrid from '../../components/ListingDetails/ListingPhotoGrid';
 import { listingData } from '../../data/listingsData';
 
 export default ({ listing }) => {
-  console.log(listing);
-
   return (
     <Layout>
-      <section className="mt-[76px] pt-10 max-w-[1000px] mx-auto w-full">
+      <section className="mt-[76px] pt-10 lg:max-w-[1120px] lg:px-3 mx-auto w-full xl:px-0">
         <ListingDetailsNav />
+        <ListingPhotoGrid listing={listing} />
+        <ListingDescription listing={listing} />
       </section>
     </Layout>
   );

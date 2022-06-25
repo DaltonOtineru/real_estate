@@ -7,6 +7,7 @@ export const listingNavItems = [
   },
   {
     text: 'Overview',
+    hidden: true,
   },
   {
     text: 'Property Details',
@@ -14,7 +15,7 @@ export const listingNavItems = [
   {
     text: 'Map',
   },
-  {
-    text: 'Similar Listings',
-  },
+  //   {
+  //     text: 'Similar Listings',
+  //   },
 ];

@@ -9,10 +9,10 @@ import coverSix from '../public/homeCover/6cover.webp';
 import coverSeven from '../public/homeCover/7cover.webp';
 import coverEight from '../public/homeCover/8cover.webp';
 // listing 1 //
-import tallow1 from '../public/details/tallow1.webp';
-import tallow2 from '../public/details/tallow2.webp';
-import tallow3 from '../public/details/tallow3.webp';
-import tallow4 from '../public/details/tallow4.webp';
+import tallowOne from '../public/details/tallow1.webp';
+import tallowTwo from '../public/details/tallow2.webp';
+import tallowThree from '../public/details/tallow3.webp';
+import tallowFour from '../public/details/tallow4.webp';
 export const listingData = [
   {
     _id: 1,
@@ -35,12 +35,11 @@ export const listingData = [
     foundation: 'Slab Foundation',
     heat: 'Gas',
     floor: 'Carpet & Tile',
-    detailImgs: {
-      imgOne: tallow1.src,
-      imgtwo: tallow2.src,
-      imgthree: tallow3.src,
-      imgtwo: tallow4.src,
-    },
+
+    imgOne: tallowOne.src,
+    imgtwo: tallowTwo.src,
+    imgthree: tallowThree.src,
+    imgFour: tallowFour.src,
   },
   {
     _id: 2,
