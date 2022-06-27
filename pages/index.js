@@ -12,7 +12,6 @@ import { listingData } from '../data/listingsData';
 
 export default function Home({ listingData }) {
   const [mounted, setMounted] = useState(false);
-  const [homes, setHomes] = useState([]);
   const { setTheme, resolvedTheme, theme } = useTheme();
 
   useEffect(() => {

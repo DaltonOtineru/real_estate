@@ -12,6 +12,7 @@ const Navigation = () => {
   const [mounted, setMounted] = useState(false);
   const { setTheme, resolvedTheme, theme } = useTheme();
   const { data: session } = useSession();
+  console.log(session);
 
   useEffect(() => {
     setMounted(true);
