@@ -2,6 +2,6 @@
 
 module.exports = {
   images: {
-    domains: ['https://berkshire-hathaway-six.vercel.app/'],
+    domains: ['https://berkshire-hathaway-six.vercel.app/', 'cdn.repliers.io'],
   },
 };

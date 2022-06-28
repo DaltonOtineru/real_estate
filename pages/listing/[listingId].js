@@ -7,6 +7,7 @@ import ListingPhotoGrid from '../../components/ListingDetails/ListingPhotoGrid';
 import { listingData } from '../../data/listingsData';
 
 const ListingPage = ({ listing }) => {
+  console.log(listing);
   return (
     <Layout>
       <section className="mt-[76px] pt-10 lg:max-w-[1120px] lg:px-3 mx-auto w-full xl:px-0">

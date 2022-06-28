@@ -8,11 +8,8 @@ import coverFive from '../public/homeCover/5cover.webp';
 import coverSix from '../public/homeCover/6cover.webp';
 import coverSeven from '../public/homeCover/7cover.webp';
 import coverEight from '../public/homeCover/8cover.webp';
-// listing 1 //
-import tallowOne from '../public/details/tallow1.webp';
-import tallowTwo from '../public/details/tallow2.webp';
-import tallowThree from '../public/details/tallow3.webp';
-import tallowFour from '../public/details/tallow4.webp';
+import coverNine from '../public/homeCover/coverNine.webp';
+
 export const listingData = [
   {
     _id: 1,
@@ -35,11 +32,7 @@ export const listingData = [
     foundation: 'Slab Foundation',
     heat: 'Gas',
     floor: 'Carpet & Tile',
-
-    imgOne: tallowOne.src,
-    imgtwo: tallowTwo.src,
-    imgthree: tallowThree.src,
-    imgFour: tallowFour.src,
+    photoId: 'tallow',
   },
   {
     _id: 2,
@@ -51,7 +44,20 @@ export const listingData = [
     sq: '1,636 Sqft',
     time: 'NEW Today',
     coverPhoto: coverTwo.src,
+    description:
+      "New Build by Freedom Homes. Split bedroom plan with wide open living, dining and kitchen, which open up to the rear covered patio in this abundant, afternoon-shaded pool size yard. Huge granite kitchen island with breakfast bar and a walk-in pantry. Large indoor utility room has cabinets and a folding area. The owner's suite features large walk-in tile shower and huge walk-in closet. Tile flooring throughout except in bedrooms, to be carpeted. Granite in kitchen, baths, and utility room. High ceilings throughout with architectural finishes in the living and owner's suite. Front yard sod is included. Still time for you to make interior selections.",
+    propertyType: 'Detached',
+    pricePerSqft: '$165',
+    lotSize: '0.13 Acres',
+    daysOnMarket: '7',
+    yearBuilt: '2022',
+    ac: 'Central Air',
+    foundation: 'Slab Foundation',
+    heat: 'Central | Electric',
+    floor: 'Carpet & Tile',
+    photoId: 'tallow',
   },
+  // NEED ^
   {
     _id: 3,
     address: '7001 Tocken Ct.',
@@ -62,6 +68,18 @@ export const listingData = [
     sq: '2,594 Sqft',
     time: 'NEW Today',
     coverPhoto: coverThree.src,
+    description:
+      "This beautiful home on a quiet cul-de-sac is ready to grow some new memories! The Elementary, Middle, and Veteran's Memorial High School are each very close-by. Formal dining with upgraded lighting & wall sconces. Lovely kitchen with granite counters & tumbled marble back splash, large island, large pantry, with new appliances. Kitchen is open to breakfast & large living area. Downstairs extra room can serve as either an office/study or 5th bedroom. Upstairs bedrooms offer added privacy. Tile flooring throughout main level, and carpet upstairs, including bonus loft area. You'll find the secondary bedrooms very generous, along with the spacious master bedroom suite. Master bath has updated vanity sinks, glamour bath with soaking tub, large walk-in closet & linen closet.. HUGE backyard! Plenty room for a pool, just endless possibilities for entertaining. Also features covered patio, large storage shed for yard equipment & sprinkler system for easy maintenance.",
+    propertyType: 'Detached',
+    pricePerSqft: '$275',
+    lotSize: '0.19 Acres',
+    daysOnMarket: '5',
+    yearBuilt: '2005',
+    ac: 'Central Air',
+    foundation: 'Slab Foundation',
+    heat: 'Central | Electric',
+    floor: 'Carpet & Tile',
+    photoId: 'tocken',
   },
   {
     _id: 4,
@@ -73,6 +91,18 @@ export const listingData = [
     sq: '2,698 Sqft',
     time: 'NEW Today',
     coverPhoto: coverFour.src,
+    description:
+      "4/4- Ranch style home on 2 ACRES, 4mls W of Calallen HS. - This 2BR (Master & Guest) downstairs and 2BR upstairs also has a nice game/play room w/recently installed carpet throughout, and Rain Soft water filter system. The 30' X 40' enclosed Shop/Barn w/additional slab, drive, and RV hookups, is within waking distance of home. A must see property for anyone interested in Country living, but still close to City accommodations, businesses, and restaurants.",
+    propertyType: 'Detached',
+    pricePerSqft: '$163',
+    lotSize: '2.0 Acres',
+    daysOnMarket: '12',
+    yearBuilt: '1989',
+    ac: 'Central Air',
+    foundation: 'Slab Foundation',
+    heat: 'Central | Electric',
+    floor: 'Carpet & Tile',
+    photoId: 'tallow',
   },
   {
     _id: 5,
@@ -84,6 +114,18 @@ export const listingData = [
     sq: '1,098 Sqft',
     time: 'NEW Today',
     coverPhoto: coverFive.src,
+    description:
+      'Fabulous 3 bedroom, 1.5 bath home located in a great central location! This home has been completely updated throughout, carefully maintained and has so much to offer! Spacious living area with designer touches and shiplap throughout! Kitchen is equipped with butcher block counter tops, built in dishwasher, GAS stove and plenty of counter/storage space! Spacious bedrooms with ample room for all of your furniture. Step out back to the covered patio and spacious yard perfect for entertaining and making memories with family and friends! Located minutes from NASCC, North Padre Island Beaches, Texas A&MCC and great hospitals, shopping, restaurants, and schools.',
+    propertyType: 'Detached',
+    pricePerSqft: '$171',
+    lotSize: '2.0 Acres',
+    daysOnMarket: '0',
+    yearBuilt: '1964',
+    ac: 'Central Air',
+    foundation: 'Slab Foundation',
+    heat: 'Central | Electric',
+    floor: 'Laminate',
+    photoId: 'tallow',
   },
   {
     _id: 6,
@@ -95,6 +137,19 @@ export const listingData = [
     sq: '1026 Sqft',
     time: 'NEW Today',
     coverPhoto: coverSix.src,
+    description:
+      "LOCATION, LOCATION!! This Flour Bluff Gem is just down the street from THE LAGUNA MADRE! Bluff Bay Marina and the Philip Dimitt Municipal Fishing Pier are a few short blocks away! This beautiful home has an open floor plan. French doors off the dining area open up to a large partially shaded deck to enjoy the Bay breeze & a cool drink. The upper level also has 2 bedrooms each w/2 large closets, a bathroom & laundry. The lower level features a bedroom, bathroom w/tiled shower, bonus room & large enclosed storage room w/optional second laundry. The kitchen & both bathrooms have been recently updated & kitchen includes the stainless refrigerator. The main level could serve as guest quarters or mother-in-law suite. There is a massive fully fenced back yard. New roof added in 2018 as well as new AC in 2017. Ample parking with 2 covered spaces. It's only minutes to the Island beaches & all the beauty North Padre Island has to offer.",
+    propertyType: 'Detached',
+    pricePerSqft: '$192',
+    lotSize: '0.14 Acres',
+    daysOnMarket: '3',
+    yearBuilt: '1970',
+    ac: 'Central Air / Window Units',
+    foundation: 'Slab Foundation',
+    heat: 'Central | Electric',
+    floor: 'Laminate',
+
+    photoId: 'tallow',
   },
   {
     _id: 7,
@@ -106,16 +161,40 @@ export const listingData = [
     sq: '1,306 Sqft',
     time: 'NEW Today',
     coverPhoto: coverSeven.src,
+    description:
+      "Beautiful home recently updated! Don't miss out on this spacious 3 bedroom, 2 bathroom, with washer and dryer hook ups, new interior paint, new LVT flooring, new lighting fixtures, crown molding, completely updated bathrooms with tiled showers,ceiling fans in all bedrooms. Kitchen features new custom cabinets, new counters, new appliances and gas/oven range. Spacious back yard.",
+    propertyType: 'Detached',
+    pricePerSqft: '$188',
+    lotSize: '0.14 Acres',
+    daysOnMarket: '0',
+    yearBuilt: '1950',
+    ac: 'Window Units',
+    foundation: 'Slab Foundation',
+    heat: 'Window Unit',
+    floor: 'Vinyl',
+    photoId: 'tallow',
   },
   {
     _id: 8,
-    address: '1408 Woodlawn Dr.',
+    address: '4247 Barracuda Pl.',
     zip_code: 'Corpus Christi, TX 78412',
-    price: '$204,500',
-    beds: '3 Bed',
-    baths: '2 Bath',
-    sq: '1,136 Sqft',
+    price: '$599,900',
+    beds: '4 Bed',
+    baths: '4 Bath',
+    sq: '3,137 Sqft',
     time: 'NEW Today',
-    coverPhoto: coverEight.src,
+    coverPhoto: coverNine.src,
+    description:
+      "Located in one of Corpus Christi's most sought-after neighborhoods, this beautifully maintained home is open, bright and designed for the family. Large formal living area with French doors leading to the backyard. Well designed kitchen featuring plenty of granite countertops, tiled backsplash, rich dark oak cabinets, and an island. The pantry is a room onto itself. The spacious family room provides multiple areas for entertaining and fun family activities. Main house has three bedroom each with an ensuite bath. Additional square footage in the 439 SF guest quarters featuring its own full bath. Outside enjoy the large open patio off the kitchen/living room area or the quiet sitting area off the guest quarters. Mature landscaping.",
+    propertyType: 'Detached',
+    pricePerSqft: '$191',
+    lotSize: '0.27 Acres',
+    daysOnMarket: '0',
+    yearBuilt: '1955',
+    ac: 'Central Air',
+    foundation: 'Slab Foundation',
+    heat: 'Gas',
+    floor: 'Carpet | Hardwood | Tile',
+    photoId: 'tallow',
   },
 ];
