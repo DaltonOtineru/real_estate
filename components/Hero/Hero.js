@@ -9,6 +9,7 @@ const Hero = () => {
         layout="fill"
         objectFit="cover"
         className="opacity-25 relative"
+        alt="Background image of a house"
         priority
       />
       <div className="absolute top-0 left-0 right-0 bottom-0 grid place-items-center">

@@ -44,9 +44,12 @@ const Navigation = () => {
         <div className="space-x-10 flex items-center">
           <div className="flex items-center space-x-2 text-white">
             <MenuAlt2Icon className="h-7 w-7  lg:hidden rounded cursor-pointer bg-[#333] text-white" />
-            <a href="/" className="flex items-center space-x-2 text-2xl h-full">
+            <Link
+              href="/"
+              className="flex items-center space-x-2 text-2xl h-full"
+            >
               <span>Berkshire Hathaway</span>
-            </a>
+            </Link>
           </div>
           <nav className="hidden lg:flex items-center space-x-6 h-full text-white">
             <NavLink text="Services" path="/" />

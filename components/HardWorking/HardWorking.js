@@ -38,6 +38,7 @@ const HardWorking = () => {
             // layout="fill"
             // className="rounded-xl shadow-xl"
             objectFit="contain"
+            alt="Text message between Rip Fritzer and a customer"
           />
         </div>
       </div>

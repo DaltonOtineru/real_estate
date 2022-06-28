@@ -7,7 +7,7 @@ import { listingData } from '../../data/listingsData';
 const FeaturedHome = ({ listing }) => {
   const { _id, address, zip_code, price, beds, baths, sq, time, coverPhoto } =
     listing;
-  console.log(_id);
+
   return (
     <Link
       href={`/listing/[listingId]`}
@@ -22,6 +22,7 @@ const FeaturedHome = ({ listing }) => {
             width={405}
             objectFit="cover"
             className="hover:scale-105 duration-200"
+            alt={`${address} Photo`}
           />
         </div>
         <div className="flex flex-col max-w-full">
