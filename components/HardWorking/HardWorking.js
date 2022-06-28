@@ -31,14 +31,14 @@ const HardWorking = () => {
           </button>
         </div>
         <div className="hidden lg:flex col-span-6 p-5 justify-center text__wrap rounded-md relative">
-          <Image
-            src="/text.png"
-            height={300}
-            width={300}
-            objectFit="cover"
-            alt="Text message between Rip Fritzer and a customer"
-            className="object-cover rounded-md"
-          />
+          <div className="h-[300px] w-[300px] !rounded-lg relative">
+            <Image
+              src="/text.png"
+              layout="fill"
+              alt="Text message between Rip Fritzer and a customer"
+              className="!rounded-lg !shadow-xl"
+            />
+          </div>
         </div>
       </div>
     </section>
