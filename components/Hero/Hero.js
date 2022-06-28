@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen bg-[#000] bg-opacity-100 overlay">
+    <section className="w-full h-screen bg-[#000] bg-opacity-100 overlay relative">
       <Image
         src={'/../public/hero_bg.jpg'}
         layout="fill"
