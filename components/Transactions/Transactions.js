@@ -7,7 +7,7 @@ const Transactions = () => {
       <div className="mx-auto max-w-[1300px] grid grid-cols-12">
         <div className="hidden lg:flex col-span-6 relative p-5 ">
           <Image
-            src={'/../public/team.jpeg'}
+            src="/team.jpeg"
             // layout="fill"
             height={350}
             width={500}

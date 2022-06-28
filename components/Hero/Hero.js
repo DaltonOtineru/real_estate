@@ -3,9 +3,9 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen bg-[#000] bg-opacity-100 overlay relative">
+    <section className="w-full h-screen bg-[#000] bg-opacity-100 overlay">
       <Image
-        src={'/../public/hero_bg.jpg'}
+        src="/hero_bg.jpg"
         layout="fill"
         objectFit="cover"
         className="opacity-25 relative"

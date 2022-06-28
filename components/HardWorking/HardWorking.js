@@ -32,7 +32,7 @@ const HardWorking = () => {
         </div>
         <div className="hidden lg:flex col-span-6 p-5 justify-center text__wrap rounded-xl relative">
           <Image
-            src={'/../public/text.png'}
+            src="/text.png"
             height={300}
             width={300}
             // layout="fill"
