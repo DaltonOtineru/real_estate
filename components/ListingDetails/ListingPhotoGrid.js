@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 const ListingPhotoGrid = ({ listing }) => {
-  const { coverPhoto, imgOne, imgTwo, imgThree, imgFour, photoId } = listing;
+  const { coverPhoto, photoId } = listing;
 
   const [mounted, setMounted] = useState(false);
 
@@ -10,7 +10,6 @@ const ListingPhotoGrid = ({ listing }) => {
     setMounted(true);
   }, []);
 
-  console.log(imgOne, imgTwo, imgFour);
   return (
     <>
       {mounted && (
@@ -36,7 +35,6 @@ const ListingPhotoGrid = ({ listing }) => {
             </div>
             <div className="relative rounded-md w-full aspect-[16/10] cursor-pointer h-full">
               <Image
-                // src="/details/tallowTwo.webp"
                 src={`/details/${photoId}Two.webp`}
                 className="w-full h-full object-cover rounded-md hover:opacity-80 duration-200"
                 alt="Listing image of property"

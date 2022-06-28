@@ -25,20 +25,19 @@ const HardWorking = () => {
             We have Residential, Commercial, and Rental specialists ready to
             walk you through the process, no matter your needs.
           </blockquote>
-          <button className="rounded-md bg-[#f3f3f3] text-[#121212] py-3 px-4 mr-3 border-transparent border-2 hover:bg-transparent hover:border-[#f3f3f3] hover:text-[#f3f3f3] duration-300 font-medium max-w-[fit-content] flex items-center">
+          <button className="rounded-md bg-[#1c1c1c] text-white hover:bg-opacity-70 dark:bg-[#f3f3f3] dark:text-[#121212] py-3 px-4 mr-3 border-transparent border-2 dark:hover:bg-transparent dark:hover:border-[#f3f3f3] dark:hover:text-[#f3f3f3] duration-300 font-medium max-w-[fit-content] flex items-center">
             Find An Agent
             <BsArrowRight className="inline ml-3" />
           </button>
         </div>
-        <div className="hidden lg:flex col-span-6 p-5 justify-center text__wrap rounded-xl relative">
+        <div className="hidden lg:flex col-span-6 p-5 justify-center text__wrap rounded-md relative">
           <Image
             src="/text.png"
             height={300}
             width={300}
-            // layout="fill"
-            // className="rounded-xl shadow-xl"
-            objectFit="contain"
+            objectFit="cover"
             alt="Text message between Rip Fritzer and a customer"
+            className="object-cover rounded-md"
           />
         </div>
       </div>

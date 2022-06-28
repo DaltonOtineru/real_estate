@@ -36,36 +36,39 @@ const Hero = () => {
           <div className="flex justify-end col-span-6">
             <form
               action="post"
-              className="hidden lg:flex flex-col  px-6 py-6 max-w-[440px] bg-[#1c1c1c] rounded-lg"
+              className="hidden lg:flex flex-col bg-white  px-6 py-6 max-w-[440px] dark:bg-[#1c1c1c] rounded-lg shadow-lg"
             >
-              <h3 className="text-2xl text-[#f5f5f5]">
+              <h3 className="text-2xl dark:text-[#f5f5f5]">
                 How Much Is Your Home Worth?
               </h3>
-              <p className="text-[#a7a7a7] text-lg pb-2">
+              <p className="dark:text-[#a7a7a7] text-[#1c1c1c] text-lg pb-2">
                 Receive a personalized estimate via email within 24hrs
               </p>
               <div className="flex flex-col mx-auto w-full">
-                <p className="text-xs text-[#a7a7a7]">Full Name</p>
+                <p className="text-xs dark:text-[#a7a7a7]">Full Name</p>
                 <input
                   type="text"
-                  className="bg-[#dfdede] dark:bg-[#333] rounded py-2 mb-4 focus:outline-none dark:text-white pl-2"
+                  className="bg dark:bg-[#333] rounded py-2 mb-4 focus:outline-none dark:text-white pl-2 bg-black bg-opacity-[.15] dark:bg-opacity-100"
                 />
               </div>
               <div className="flex flex-col">
-                <p className="text-xs text-[#a7a7a7]">Email</p>
+                <p className="text-xs dark:text-[#a7a7a7]">Email</p>
                 <input
                   type="text"
-                  className="bg-white dark:bg-[#333] rounded py-2 mb-4 focus:outline-none text-white pl-2"
+                  className=" dark:bg-[#333] rounded py-2 mb-4 focus:outline-none dark:text-white pl-2 bg-black bg-opacity-[.15] dark:bg-opacity-100"
                 />
               </div>
               <div className="flex flex-col">
-                <p className="text-xs text-[#a7a7a7]">Address</p>
+                <p className="text-xs dark:text-[#a7a7a7]">Address</p>
                 <input
                   type="text"
-                  className="bg-white dark:bg-[#333] rounded py-2 mb-4 focus:outline-none text-white pl-2"
+                  className=" dark:bg-[#333] rounded py-2 mb-4 focus:outline-none dark:text-white pl-2 bg-black bg-opacity-[.15] dark:bg-opacity-100"
                 />
               </div>
-              <button className=" rounded bg-[#333] text-white py-3 mt-4 hover:bg-opacity-70 transition ease duration-300">
+              <button
+                className=" rounded text-white bg-[#1c1c1c] dark:bg-[#333] dark:text-white py-3 mt-4 dark:hover:bg-opacity-70 hover:bg-opacity-90 transition ease duration-300"
+                type="submit"
+              >
                 Get Your Home Value
               </button>
             </form>

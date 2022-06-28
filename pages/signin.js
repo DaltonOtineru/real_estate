@@ -27,13 +27,13 @@ export default function SignIn({ providers }) {
               }}
             >
               {provider.id === 'google' && (
-                <FaGoogle className="text-white mx-auto" />
+                <FaGoogle className="text-black dark:text-white mx-auto" />
               )}
               {provider.id === 'twitter' && (
-                <FaTwitter className="text-white mx-auto" />
+                <FaTwitter className="text-black dark:text-white mx-auto" />
               )}
               {provider.id === 'facebook' && (
-                <FaFacebook className="text-white mx-auto" />
+                <FaFacebook className="text-black dark:text-white mx-auto" />
               )}
             </button>
           ))}

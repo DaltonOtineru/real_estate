@@ -114,20 +114,21 @@ const ListingDescription = ({ listing }) => {
         </div>
       </div>
       <div className="col-span-12 lg:col-span-5 lg:ml-12 mt-2 flex items-center">
-        <div className="w-full rounded-lg shadow-lg hover:shadow-2xl border-[1px] dark:border-white/10 dark:hover:border-white/20 duration-200 my-4 lg:my-0">
+        <div className="w-full rounded-lg shadow-2xl hover:shadow-2xl border-[1px] dark:border-white/10 dark:hover:border-white/20 duration-200 my-4 lg:my-0">
           <form className="px-6 py-10 flex flex-col">
             <h3 className="text-lg dark:text-[#dfdede] font-bold">
               Request More Info
             </h3>
             <p className="mb-2">We will get back with you within 24hrs</p>
             <label className="text-sm dark:text-white/50">Full Name</label>
-            <input className="bg-black bg-opacity-[0.07] dark:bg-opacity-100 dark:bg-[#282828] rounded border-none outline-none py-1 mb-2 pl-1" />
+            <input className="bg-black bg-opacity-[0.07] dark:bg-opacity-100 dark:bg-[#282828] rounded border-none outline-none py-1 mb-2 px-2" />
             <label className="text-sm dark:text-white/50">Email</label>
-            <input className="bg-black bg-opacity-[0.07] dark:bg-opacity-100 dark:bg-[#282828] rounded border-none outline-none py-1 mb-2 pl-1" />
+            <input className="bg-black bg-opacity-[0.07] dark:bg-opacity-100 dark:bg-[#282828] rounded border-none outline-none py-1 mb-2 px-2" />
             <label className="text-sm dark:text-white/50">Message</label>
             <textarea
               rows="2"
-              className="dark:bg-[#282828] rounded border-none outline-none resize-none mb-3 pl-1 bg-black bg-opacity-[0.07] dark:bg-opacity-100"
+              className="dark:bg-[#282828] rounded border-none outline-none resize-none mb-3 py-1 px-2 bg-black bg-opacity-[0.07] dark:bg-opacity-100 placeholder:text-black dark:placeholder:text-white"
+              placeholder={`I am interested in ${address}`}
             />
             <button
               type="submit"

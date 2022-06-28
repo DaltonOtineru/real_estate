@@ -15,9 +15,9 @@
     --primary: #000;
     --muted: #242424;
   }
-  .text__wrap > * {
+  /* .text__wrap > * {
     border-radius: 0.5rem;
-  }
+  } */
   .home__wrap > * {
     border-radius: 0.5rem;
   }

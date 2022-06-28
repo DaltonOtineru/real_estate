@@ -1,7 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
 // Home Page ~ Cover Photos //
 import coverOne from '../public/homeCover/1cover.webp';
-import coverTwo from '../public/homeCover/2cover.webp';
+// import coverTwo from '../public/homeCover/2cover.webp';
+import coverTwo from '../public/homeCover/coverTwo.webp';
 import coverThree from '../public/homeCover/3cover.webp';
 import coverFour from '../public/homeCover/4cover.webp';
 import coverFive from '../public/homeCover/5cover.webp';
@@ -36,12 +37,12 @@ export const listingData = [
   },
   {
     _id: 2,
-    address: '1965 Admiral',
-    zip_code: 'Aransas Pass, TX 78336',
-    price: '$269,500',
-    beds: '3 Bed',
+    address: '426 Colony Dr.',
+    zip_code: 'Corpus Christi, TX 78412',
+    price: '$583,00',
+    beds: '4 Bed',
     baths: '2 Bath',
-    sq: '1,636 Sqft',
+    sq: '3,259',
     time: 'NEW Today',
     coverPhoto: coverTwo.src,
     description:
@@ -55,9 +56,9 @@ export const listingData = [
     foundation: 'Slab Foundation',
     heat: 'Central | Electric',
     floor: 'Carpet & Tile',
-    photoId: 'tallow',
+    photoId: 'colony',
   },
-  // NEED ^
+
   {
     _id: 3,
     address: '7001 Tocken Ct.',
@@ -102,7 +103,7 @@ export const listingData = [
     foundation: 'Slab Foundation',
     heat: 'Central | Electric',
     floor: 'Carpet & Tile',
-    photoId: 'tallow',
+    photoId: 'countryRoad',
   },
   {
     _id: 5,
@@ -125,7 +126,7 @@ export const listingData = [
     foundation: 'Slab Foundation',
     heat: 'Central | Electric',
     floor: 'Laminate',
-    photoId: 'tallow',
+    photoId: 'sandalWood',
   },
   {
     _id: 6,
@@ -149,7 +150,7 @@ export const listingData = [
     heat: 'Central | Electric',
     floor: 'Laminate',
 
-    photoId: 'tallow',
+    photoId: 'skipperLane',
   },
   {
     _id: 7,
@@ -172,7 +173,7 @@ export const listingData = [
     foundation: 'Slab Foundation',
     heat: 'Window Unit',
     floor: 'Vinyl',
-    photoId: 'tallow',
+    photoId: 'naples',
   },
   {
     _id: 8,
@@ -195,6 +196,6 @@ export const listingData = [
     foundation: 'Slab Foundation',
     heat: 'Gas',
     floor: 'Carpet | Hardwood | Tile',
-    photoId: 'tallow',
+    photoId: 'barracuda',
   },
 ];
