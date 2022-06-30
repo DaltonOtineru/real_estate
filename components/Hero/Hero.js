@@ -38,7 +38,7 @@ const Hero = () => {
               action="post"
               className="hidden lg:flex flex-col bg-white  px-6 py-6 max-w-[440px] dark:bg-[#1c1c1c] rounded-lg shadow-lg"
             >
-              <h3 className="text-2xl dark:text-[#f5f5f5]">
+              <h3 className="text-2xl dark:text-[#f5f5f5] font-semibold">
                 How Much Is Your Home Worth?
               </h3>
               <p className="dark:text-[#a7a7a7] text-[#1c1c1c] text-lg pb-2">

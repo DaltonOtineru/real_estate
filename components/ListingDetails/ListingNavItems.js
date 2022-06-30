@@ -15,7 +15,4 @@ export const listingNavItems = [
   {
     text: 'Map',
   },
-  //   {
-  //     text: 'Similar Listings',
-  //   },
 ];
