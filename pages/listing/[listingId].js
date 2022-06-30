@@ -17,9 +17,9 @@ const ListingPage = ({ listing }) => {
   const imageSrcs = [
     listing.coverPhoto,
     `/details/${listing.photoId}One.webp`,
-    `/details/${listing.photoId}two.webp`,
-    `/details/${listing.photoId}three.webp`,
-    `/details/${listing.photoId}four.webp`,
+    `/details/${listing.photoId}Two.webp`,
+    `/details/${listing.photoId}Three.webp`,
+    `/details/${listing.photoId}Four.webp`,
   ];
 
   return (

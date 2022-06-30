@@ -51,7 +51,7 @@ const ListingPhotoGrid = ({ listing, imageSrcs }) => {
             </div>
             <div
               className="relative rounded-md w-full aspect-[16/10] cursor-pointer h-full"
-              onClick={() => openModal(`/details/${photoId}two.webp`)}
+              onClick={() => openModal(`/details/${photoId}Two.webp`)}
             >
               <Image
                 src={`/details/${photoId}Two.webp`}
@@ -64,7 +64,7 @@ const ListingPhotoGrid = ({ listing, imageSrcs }) => {
           <div className="hidden lg:grid grid-cols-1 col-span-3 gap-y-2">
             <div
               className="relative rounded-md w-full aspect-[16/10] cursor-pointer h-full"
-              onClick={() => openModal(`/details/${photoId}three.webp`)}
+              onClick={() => openModal(`/details/${photoId}Three.webp`)}
             >
               <Image
                 src={`/details/${photoId}Three.webp`}
@@ -75,7 +75,7 @@ const ListingPhotoGrid = ({ listing, imageSrcs }) => {
             </div>
             <div
               className="relative rounded-md w-full aspect-[16/10] cursor-pointer h-full"
-              onClick={() => openModal(`/details/${photoId}four.webp`)}
+              onClick={() => openModal(`/details/${photoId}Four.webp`)}
             >
               <Image
                 src={`/details/${photoId}Four.webp`}
