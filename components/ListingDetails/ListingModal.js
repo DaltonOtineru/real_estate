@@ -9,7 +9,10 @@ import {
   XIcon,
 } from '@heroicons/react/solid';
 
-const ListingModal = ({ listing: { photoId, coverPhoto }, imageSrcs }) => {
+const ListingModal = ({
+  listing: { photoId, coverPhoto, address },
+  imageSrcs,
+}) => {
   const [showModal, setShowModal] = useRecoilState(modalState);
   const [current, setCurrent] = useRecoilState(currentSlideState);
 
@@ -64,6 +67,7 @@ const ListingModal = ({ listing: { photoId, coverPhoto }, imageSrcs }) => {
               console.log(slide);
               return (
                 <div
+                  key={index}
                   className={`w-full h-full relative ${
                     index === current
                       ? 'opacity-100 duration-1000 ease'
@@ -76,6 +80,7 @@ const ListingModal = ({ listing: { photoId, coverPhoto }, imageSrcs }) => {
                       src={slide}
                       priority
                       className="rounded-lg"
+                      alt={`Image of ${address}`}
                     />
                   )}
                 </div>
