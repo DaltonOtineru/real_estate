@@ -18,7 +18,7 @@ const ListingPhotoGrid = ({ listing, imageSrcs }) => {
     setShowModal(true);
   };
 
-  console.log(imageSrcs.indexOf(`/details/${photoId}two.webp`));
+  console.log(imageSrcs.indexOf(`/details/${photoId}Two.webp`));
 
   return (
     <>

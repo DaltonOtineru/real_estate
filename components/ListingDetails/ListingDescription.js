@@ -14,18 +14,20 @@ import {
 import { GiStairs } from 'react-icons/gi';
 import { BsFillHouseDoorFill } from 'react-icons/bs';
 import ListingSpec from './ListingSpec';
+import ListingMap from './ListingMap';
 
 const ListingDescription = ({ listing }) => {
   const {
     _id,
     address,
     zip_code,
+    lat,
+    long,
     price,
     beds,
     baths,
     sq,
     time,
-
     description,
     propertyType,
     pricePerSqft,
@@ -37,6 +39,7 @@ const ListingDescription = ({ listing }) => {
     heat,
     floor,
   } = listing;
+
   return (
     <section className="grid grid-cols-12 w-[90%] lg:w-full pt-4 lg:pt-2 md:mt-[80px] lg:mt-0 mx-auto sm:mt-[50px]">
       <div className="flex flex-col col-span-12 lg:col-span-7">
@@ -112,6 +115,9 @@ const ListingDescription = ({ listing }) => {
             />
           </div>
         </div>
+        <section className="py-4">
+          <ListingMap lat={lat} long={long} />
+        </section>
       </div>
       <div className="col-span-12 lg:col-span-5 lg:ml-12 mt-2 flex items-center">
         <div className="w-full rounded-lg shadow-2xl hover:shadow-2xl border-[1px] dark:border-white/10 dark:hover:border-white/20 duration-200 my-4 lg:my-0">

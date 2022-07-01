@@ -128,7 +128,7 @@ const Navigation = ({ listingShadow }) => {
       <div
         className={
           mobileMenu
-            ? 'fixed left-0 top-0 w-full md:w-3/4 h-screen bg-white dark:bg-[#1c1c1c] py-10 px-4 ease-in duration-500 lg:hidden'
+            ? 'fixed left-0 top-0 w-full md:w-3/4 h-screen bg-white dark:bg-[#1c1c1c] py-10 px-4 ease-in duration-500 lg:hidden shadow-2xl'
             : 'fixed left-[-100%] top-0 py-10 px-4 ease-in duration-500 shadow-2xl h-screen w-3/4 sm:w-[60%] md:w-[45%]'
         }
       >

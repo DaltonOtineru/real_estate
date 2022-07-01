@@ -1,15 +1,13 @@
-import Image from 'next/image';
+import Head from 'next/head';
 import React from 'react';
 import { useRecoilState } from 'recoil';
 import { modalState } from '../../atoms/modalAtom';
 import Footer from '../../components/Footer/Footer';
-import Layout from '../../components/Layout/Layout';
 import ListingDescription from '../../components/ListingDetails/ListingDescription';
 import ListingDetailsNav from '../../components/ListingDetails/ListingDetailsNav';
 import ListingPhotoGrid from '../../components/ListingDetails/ListingPhotoGrid';
 import Navigation from '../../components/Navigation/Navigation';
 import { listingData } from '../../data/listingsData';
-import Modal from '@mui/material/Modal';
 import ListingModal from '../../components/ListingDetails/ListingModal';
 
 const ListingPage = ({ listing }) => {
@@ -24,6 +22,9 @@ const ListingPage = ({ listing }) => {
 
   return (
     <section className="w-screen h-screen relative">
+      <Head>
+        <title>{listing.address} | Berkshire Hathaway</title>
+      </Head>
       <Navigation listingShadow />
       <section className="mt-[76px] pt-10 lg:max-w-[1120px] lg:px-3 mx-auto w-full xl:px-0">
         <ListingDetailsNav />

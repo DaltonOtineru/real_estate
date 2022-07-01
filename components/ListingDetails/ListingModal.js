@@ -49,7 +49,7 @@ const ListingModal = ({
     >
       <>
         <div className="w-full h-full flex items-center justify-center !z-40">
-          <div className="aspect-[16/10] relative !z-50 w-[1000px] h-[700px]">
+          <div className="aspect-[16/10] relative !z-50 w-[1000px] h-[700px] shadow-2xl">
             <XIcon
               onClick={handleClose}
               className="h-10 w-10 text-white absolute right-5 top-5 z-[60] bg-black/40 rounded-full p-2 cursor-pointer"
