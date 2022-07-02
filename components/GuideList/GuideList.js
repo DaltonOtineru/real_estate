@@ -3,7 +3,7 @@ import React from 'react';
 const GuideList = ({ guideData }) => {
   const renderGuideData = () => {
     return guideData.map(({ Icon, title, text }) => (
-      <div className="flex flex-col items-start py-4 space-y-1">
+      <div className="flex flex-col items-start py-4 space-y-1" key={title}>
         <div className="flex items-center">
           <Icon className="h-11 w-11 p-2 bg-[#EAEBEE] dark:bg-white/20 text-black dark:text-white rounded-full mr-2" />
           <h3 className="font-bold text-lg dark:text-opacity-[.87]">{title}</h3>
