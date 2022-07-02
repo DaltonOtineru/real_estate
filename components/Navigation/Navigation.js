@@ -16,8 +16,9 @@ import {
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { useSession, signIn, signOut } from 'next-auth/react';
+import { learnDrop, servicesDrop, teamDrop } from './dropDownData';
 
-const Navigation = ({ listingShadow }) => {
+const Navigation = ({ listingShadow, guide }) => {
   const [shadow, setShadow] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -47,7 +48,9 @@ const Navigation = ({ listingShadow }) => {
 
   return (
     <header
-      className={`w-full p-4 fixed z-50 top-0 left-0 transition duration-500 
+      className={`w-full p-4 fixed z-50 top-0 left-0 transition duration-500 ${
+        guide && '!shadow-xl'
+      }
         ${shadow || listingShadow ? 'bg-white shadow-2xl dark:bg-[#222]' : ''}
         `}
     >
@@ -72,16 +75,40 @@ const Navigation = ({ listingShadow }) => {
             </Link>
           </div>
           <nav
-            className={`hidden lg:flex items-center space-x-6 h-full  text-lg ${
+            className={`hidden lg:flex items-center space-x-6 h-full text-lg ${
               shadow || listingShadow
                 ? 'text-black dark:text-white'
                 : 'text-white'
             }`}
           >
-            <NavLink text="Services" path="/" cName="" />
-            <NavLink text="Our Team" path="/" cName="" />
-            <NavLink text="Learn" path="/" cName="" />
-            <NavLink text="Contact" path="/" cName="" />
+            <NavLink
+              dropdownLink
+              text="Services"
+              path="/"
+              cName="cursor-pointer relative group overflow-visible py-3 nav__item"
+              dropData={servicesDrop}
+              bottom="300px"
+            />
+            <NavLink
+              dropdownLink
+              text="Our Team"
+              path="/"
+              cName="cursor-pointer relative group py-3 nav__item"
+              dropData={teamDrop}
+              bottom="190px"
+            />
+            <NavLink
+              dropdownLink
+              text="Learn"
+              path="/"
+              cName="cursor-pointer relative group py-3 nav__item"
+              dropData={learnDrop}
+            />
+            <NavLink
+              text="Contact"
+              path="/"
+              cName="cursor-pointer relative group py-3 nav__item"
+            />
           </nav>
         </div>
         <div className="space-x-2 flex items-center text-md">
@@ -145,24 +172,28 @@ const Navigation = ({ listingShadow }) => {
               text="Browse Listings For Sale"
               iconClass="h-7 w-7 mr-1"
               path="/"
+              className="flex cursor-pointer"
             />
             <NavLink
               Icon={ShoppingBagIcon}
               text="Sell A Home"
               iconClass="h-7 w-7 mr-1"
               path="/"
+              className="flex cursor-pointer"
             />
             <NavLink
               Icon={KeyIcon}
               text="Browse Rentals"
               iconClass="h-7 w-7 mr-1"
               path="/"
+              className="flex cursor-pointer"
             />
             <NavLink
               Icon={CalculatorIcon}
               text="Mortgage Calculator"
               iconClass="h-7 w-7 mr-1"
               path="/"
+              className="flex cursor-pointer"
             />
           </div>
           <div className="flex flex-col dark:text-white/90 text-lg space-y-4 py-8 border-b-[1px]  border-black/30 dark:border-white/20">
@@ -171,18 +202,21 @@ const Navigation = ({ listingShadow }) => {
               text="First-Time Home Buyer Guide"
               iconClass="h-7 w-7 mr-1"
               path="/"
+              className="flex cursor-pointer"
             />
             <NavLink
               Icon={BeakerIcon}
               text="Home Marketing Guide"
               iconClass="h-7 w-7 mr-1"
               path="/"
+              className="flex cursor-pointer"
             />
             <NavLink
               Icon={PuzzleIcon}
               text="Frequently Asked Questions"
               iconClass="h-7 w-7 mr-1"
               path="/"
+              className="flex cursor-pointer"
             />
           </div>
           <div className="flex flex-col dark:text-white/90 text-lg space-y-4 py-8 border-b-[1px]  border-black/30 dark:border-white/20">
@@ -191,12 +225,14 @@ const Navigation = ({ listingShadow }) => {
               text="Our Team"
               iconClass="h-7 w-7 mr-1"
               path="/"
+              className="flex cursor-pointer"
             />
             <NavLink
               Icon={SparklesIcon}
               text="Become A Realtor"
               iconClass="h-7 w-7 mr-1"
               path="/"
+              className="flex cursor-pointer"
             />
           </div>
           <div className="w-full">

@@ -33,7 +33,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="flex justify-end col-span-6">
+          <div className="flex justify-end col-span-6 pr-5">
             <form
               action="post"
               className="hidden lg:flex flex-col bg-white  px-6 py-6 max-w-[440px] dark:bg-[#1c1c1c] rounded-lg shadow-lg"

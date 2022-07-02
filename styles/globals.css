@@ -15,9 +15,16 @@
     --primary: #000;
     --muted: #242424;
   }
-  /* .text__wrap > * {
-    border-radius: 0.5rem;
-  } */
+  .nav__item .animated__underline {
+    width: 0;
+    border-bottom: 2px solid #fff;
+  }
+
+  .nav__item:hover .animated__underline {
+    width: 20px;
+    border-bottom: 2px solid #fff;
+    transition: width 0.2s;
+  }
   .home__wrap > * {
     border-radius: 0.5rem;
   }
