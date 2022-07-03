@@ -201,14 +201,14 @@ const Navigation = ({ listingShadow, guide }) => {
               Icon={AcademicCapIcon}
               text="First-Time Home Buyer Guide"
               iconClass="h-7 w-7 mr-1"
-              path="/"
+              path="/buyersguide"
               className="flex cursor-pointer"
             />
             <NavLink
               Icon={BeakerIcon}
               text="Home Marketing Guide"
               iconClass="h-7 w-7 mr-1"
-              path="/"
+              path="/marketingguide"
               className="flex cursor-pointer"
             />
             <NavLink

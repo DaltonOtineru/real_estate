@@ -61,7 +61,7 @@ export const learnDrop = [
     title: 'Home Marketing Guide',
     text: 'Learn what makes our marketing so dynamic',
     Icon: BeakerIcon,
-    path: '/',
+    path: '/marketingguide',
   },
   {
     title: 'Frequently Asked Questions',

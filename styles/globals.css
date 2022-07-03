@@ -25,6 +25,7 @@
     border-bottom: 2px solid #fff;
     transition: width 0.2s;
   }
+
   .home__wrap > * {
     border-radius: 0.5rem;
   }
