@@ -23,10 +23,9 @@ const buyersguide = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-12 px-6 lg:px-12 lg:space-x-4 mx-auto relative  xl:max-w-7xl">
+          <div className="grid grid-cols-12 px-6 lg:px-12 lg:space-x-12 mx-auto relative  xl:max-w-7xl">
             <GuideList guideData={buyersGuideData} />
             <GuideForm inputLabel="Phone" />
-            {/* Form */}
           </div>
         </section>
         <Footer />

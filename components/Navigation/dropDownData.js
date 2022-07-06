@@ -47,7 +47,7 @@ export const teamDrop = [
     title: 'Become A Realtor',
     text: 'Join the Berkshire Hathaway family',
     Icon: SparklesIcon,
-    path: '/',
+    path: '/careers',
   },
 ];
 export const learnDrop = [
