@@ -41,7 +41,7 @@ const ListingDescription = ({ listing }) => {
   } = listing;
 
   return (
-    <section className="grid grid-cols-12 w-[90%] lg:w-full pt-4 lg:pt-2 md:mt-[80px] lg:mt-0 mx-auto sm:mt-[50px]">
+    <section className="grid grid-cols-12 w-[90%] lg:w-full pt-4 lg:pt-2 md:mt-[80px] lg:mt-0 mx-auto sm:mt-[50px] border-b-[1px] pb-4 dark:border-white/10">
       <div className="flex flex-col col-span-12 lg:col-span-7">
         <div className="flex justify-between items-start">
           <h1 className="text-2xl dark:text-[#dfdede] font-extrabold">
@@ -119,7 +119,7 @@ const ListingDescription = ({ listing }) => {
           <ListingMap lat={lat} long={long} />
         </section>
       </div>
-      <div className="col-span-12 lg:col-span-5 lg:ml-12 mt-2 flex items-center">
+      <div className="col-span-12 lg:col-span-5 lg:ml-12 mt-2 flex items-start justify-start">
         <div className="w-full rounded-lg shadow-2xl hover:shadow-2xl border-[1px] dark:border-white/10 dark:hover:border-white/20 duration-200 my-4 lg:my-0">
           <form className="px-6 py-10 flex flex-col">
             <h3 className="text-lg dark:text-[#dfdede] font-bold">

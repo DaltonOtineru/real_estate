@@ -67,6 +67,6 @@ export const learnDrop = [
     title: 'Frequently Asked Questions',
     text: 'Get answers for the questions we are asked the most',
     Icon: PuzzleIcon,
-    path: '/',
+    path: '/faq',
   },
 ];

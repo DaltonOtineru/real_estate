@@ -85,7 +85,7 @@ const Navigation = ({ listingShadow, guide }) => {
               dropdownLink
               text="Services"
               path="/"
-              cName="cursor-pointer relative group overflow-visible py-3 nav__item"
+              cName="cursor-pointer relative group  py-3 nav__item"
               dropData={servicesDrop}
               bottom="300px"
             />

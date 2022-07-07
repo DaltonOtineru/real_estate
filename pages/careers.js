@@ -31,6 +31,7 @@ const careers = () => {
                   layout="fill"
                   objectFit="cover"
                   className="rounded-lg"
+                  alt="Berkshire Hathaway Team"
                 />
               </div>
             </div>

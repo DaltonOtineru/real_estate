@@ -16,7 +16,7 @@ const faq = () => {
               </h1>
               <p className="text-center text-medium font-medium">
                 Have a question for us here at Berkshire Hathaway? Find your
-                answers here
+                answers here!
               </p>
             </div>
           </div>
