@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+  }
   .dark {
     --background: #1c1c1c;
     --accent: #52898a;

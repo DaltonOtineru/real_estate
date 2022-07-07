@@ -20,7 +20,7 @@ const GuideForm = ({ inputLabel }) => {
 
           <button
             type="submit"
-            className="bg-black dark:bg-white dark:text-black rounded border-none outline-none text-white py-3 hover:bg-opacity-80  duration-200"
+            className="bg-black dark:bg-white dark:text-black rounded border-none outline-none text-white py-3 hover:bg-opacity-80  duration-200 "
           >
             Get More Info
           </button>
