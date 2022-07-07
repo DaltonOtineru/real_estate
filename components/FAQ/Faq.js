@@ -1,12 +1,4 @@
 import React from 'react';
-import {
-  AdjustmentsIcon,
-  CalculatorIcon,
-  MapIcon,
-  OfficeBuildingIcon,
-  PresentationChartLineIcon,
-} from '@heroicons/react/outline';
-import FaqLink from './FaqLink';
 import QuestionSection from './QuestionSection';
 import {
   buyingQuestions,
@@ -15,28 +7,19 @@ import {
   rentingQuestions,
   sellingQuestions,
 } from '../../data/faqData';
+import FaqNavbar from './FaqNavbar';
 
 const Faq = () => {
   return (
-    <div className="mx-auto w-[95%] max-w-6xl flex items-start relative h-full">
-      <div className="w-1/5 hidden lg:block relative">
-        <aside className="sticky top-0">
-          <ul className="flex flex-col gap-y-2">
-            <FaqLink text="Buying" Icon={MapIcon} path="#buying" />
-            <FaqLink
-              text="Selling"
-              Icon={PresentationChartLineIcon}
-              path="#selling"
-            />
-            <FaqLink text="Renting" Icon={OfficeBuildingIcon} path="#renting" />
-            <FaqLink text="Mortgages" Icon={CalculatorIcon} path="#mortgage" />
-            <FaqLink
-              text="Credit Repair"
-              Icon={AdjustmentsIcon}
-              path="#credit"
-            />
-          </ul>
-        </aside>
+    <div className="mx-auto w-[95%] max-w-6xl flex items-start relative">
+      <div className="hidden lg:block w-1/5 relative lg:h-[200vh]">
+        <div className="lg:sticky lg:top-40">
+          <aside className="">
+            <ul className="flex flex-col gap-y-2">
+              <FaqNavbar />
+            </ul>
+          </aside>
+        </div>
       </div>
       <main className="w-full lg:w-4/5 flex flex-col gap-y-12 justify-center">
         <QuestionSection

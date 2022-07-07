@@ -6,7 +6,7 @@ import Navigation from '../components/Navigation/Navigation';
 const prequalify = () => {
   return (
     <div id="root" className=" min-h-screen min-w-screen font-sans">
-      <main className="bg-white dark:bg-background w-full h-full font-sans overflow-hidden">
+      <main className="bg-white dark:bg-background w-full h-full font-sans ">
         <Navigation listingShadow guide />
         <section className="mt-[86px] pb-12">
           <div className="w-full py-12">

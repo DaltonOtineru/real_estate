@@ -1,12 +1,14 @@
 import React from 'react';
 import Faq from '../components/FAQ/Faq';
+import FaqMobileMenu from '../components/FAQ/FaqMobileMenu';
 import Footer from '../components/Footer/Footer';
 import Navigation from '../components/Navigation/Navigation';
 
 const faq = () => {
   return (
     <div id="root" className=" min-h-screen min-w-screen font-sans">
-      <main className="bg-white dark:bg-background w-full h-full font-sans overflow-hidden">
+      <FaqMobileMenu />
+      <main className="bg-white dark:bg-background w-full h-full font-sans">
         <Navigation listingShadow guide />
         <section className="mt-[86px] pb-12">
           <div className="w-full py-12">

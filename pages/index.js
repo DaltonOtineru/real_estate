@@ -33,7 +33,7 @@ export default function Home({ listingData }) {
       </Head>
 
       {mounted && (
-        <main className="bg-white dark:bg-background w-full h-full font-sans overflow-hidden">
+        <main className="bg-white dark:bg-background w-full h-full font-sans">
           <Layout>
             <Hero />
             <FeaturedHomes listingData={listingData} />

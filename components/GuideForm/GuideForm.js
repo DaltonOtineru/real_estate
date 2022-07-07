@@ -2,9 +2,9 @@ import React from 'react';
 
 const GuideForm = ({ inputLabel }) => {
   return (
-    <div className="lg:sticky lg:top-40 lg:mt-0 mt-10 w-full col-span-12 lg:col-span-5 flex flex-col ">
-      <div className="w-full  rounded-lg shadow-2xl hover:shadow-2xl border-[1px] dark:border-white/10 dark:hover:border-white/20 duration-200 my-4 lg:my-0 dark:bg-[#141414]">
-        <form className="px-6 py-10 flex flex-col">
+    <div className="lg:mt-0 mt-10 w-full col-span-12 lg:col-span-5 flex flex-col relative">
+      <div className="w-full rounded-lg shadow-2xl hover:shadow-2xl border-[1px] dark:border-white/10 dark:hover:border-white/20 duration-200 my-4 lg:my-0 dark:bg-[#141414] lg:sticky lg:top-40">
+        <form className="px-6 py-10 flex flex-col ">
           <h3 className="text-lg dark:text-[#dfdede] font-extrabold">
             Request More Info
           </h3>

@@ -10,7 +10,7 @@ import GuideForm from '../components/GuideForm/GuideForm';
 const buyersguide = () => {
   return (
     <div id="root" className=" min-h-screen min-w-screen font-sans">
-      <main className="bg-white dark:bg-background w-full h-full font-sans overflow-hidden">
+      <main className="bg-white dark:bg-background w-full h-full font-sans">
         <Navigation listingShadow guide />
         <section className="mt-[86px] pb-12">
           <div className="w-full py-12">
@@ -23,7 +23,7 @@ const buyersguide = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-12 px-6 lg:px-12 lg:space-x-12 mx-auto relative  xl:max-w-7xl">
+          <div className="grid grid-cols-12 px-6 lg:px-12 lg:space-x-12 mx-auto xl:max-w-7xl ">
             <GuideList guideData={buyersGuideData} />
             <GuideForm inputLabel="Phone" />
           </div>
