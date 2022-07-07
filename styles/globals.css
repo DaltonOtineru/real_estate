@@ -33,6 +33,30 @@
   .home__wrap > * {
     border-radius: 0.5rem;
   }
+  input[type='range'] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: black;
+    cursor: pointer;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: black;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .dark input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: white;
+    appearance: none;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+  }
 }
 
 @layer components {
@@ -44,5 +68,8 @@
   }
   .footer__link {
     @apply py-1 lg:py-2 text-black/70 hover:opacity-50 dark:text-white dark:opacity-[.37] dark:hover:opacity-[.65] cursor-pointer;
+  }
+  .calc__input {
+    @apply dark:bg-white/30 h-2 rounded-md;
   }
 }

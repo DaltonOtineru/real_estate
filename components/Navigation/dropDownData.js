@@ -33,7 +33,7 @@ export const servicesDrop = [
     title: 'Mortgage Calculator',
     text: 'Crunch the numbers | Determine your home budget',
     Icon: CalculatorIcon,
-    path: '/',
+    path: '/prequalify',
   },
 ];
 export const teamDrop = [
