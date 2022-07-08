@@ -8,7 +8,7 @@ export default function SignIn({ providers }) {
   return (
     <section className="flex items-center justify-center h-screen w-screen">
       <Head>
-        <title>Berkshire Hathaway Login</title>
+        <title>Sign In | Berkshire Hathaway</title>
       </Head>
       <div className="w-11/12 flex flex-col items-center justify-center">
         <h1 className="text-center text-xl lg:text-3xl dark:text-white dark:text-opacity-[.87] font-extrabold">

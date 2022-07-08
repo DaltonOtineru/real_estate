@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 import Faq from '../components/FAQ/Faq';
 import FaqMobileMenu from '../components/FAQ/FaqMobileMenu';
@@ -7,6 +8,9 @@ import Navigation from '../components/Navigation/Navigation';
 const faq = () => {
   return (
     <div id="root" className=" min-h-screen min-w-screen font-sans">
+      <Head>
+        <title>FAQ | Berkshire Hathaway</title>
+      </Head>
       <FaqMobileMenu />
       <main className="bg-white dark:bg-background w-full h-full font-sans">
         <Navigation listingShadow guide />

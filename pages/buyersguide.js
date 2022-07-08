@@ -6,6 +6,7 @@ import Layout from '../components/Layout/Layout';
 import { buyersGuideData } from '../data/buyersGuideData';
 import Navigation from '../components/Navigation/Navigation';
 import GuideForm from '../components/GuideForm/GuideForm';
+import Head from 'next/head';
 
 const buyersguide = () => {
   const formHeader = 'Schedule A Consultation';
@@ -13,6 +14,9 @@ const buyersguide = () => {
 
   return (
     <div id="root" className=" min-h-screen min-w-screen font-sans">
+      <Head>
+        <title>Buyers Guide | Berkshire Hathaway</title>
+      </Head>
       <main className="bg-white dark:bg-background w-full h-full font-sans">
         <Navigation listingShadow guide />
         <section className="mt-[86px] pb-12">

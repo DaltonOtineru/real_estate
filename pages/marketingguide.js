@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import Navigation from '../components/Navigation/Navigation';
 import { marketingGuideData } from '../data/marketingGuideData';
 import GuideForm from '../components/GuideForm/GuideForm';
+import Head from 'next/head';
 
 const marketingGuide = () => {
   const formHeader = 'Find Out What Your Home Is Worth';
@@ -11,6 +12,9 @@ const marketingGuide = () => {
 
   return (
     <div id="root" className=" min-h-screen min-w-screen font-sans">
+      <Head>
+        <title>Marketing Guide | Berkshire Hathaway</title>
+      </Head>
       <main className="bg-white dark:bg-background w-full h-full font-sans">
         <Navigation listingShadow guide />
         <section className="mt-[86px] pb-12">

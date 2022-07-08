@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
 import Footer from '../components/Footer/Footer';
@@ -8,6 +9,9 @@ import { becomeRealtorData } from '../data/becomeRealtorData';
 const careers = () => {
   return (
     <div id="root" className=" min-h-screen min-w-screen font-sans">
+      <Head>
+        <title>Careers | Berkshire Hathaway</title>
+      </Head>
       <main className="bg-white dark:bg-background w-full h-full font-sans ">
         <Navigation listingShadow guide />
         <section className="mt-[86px] pb-12">

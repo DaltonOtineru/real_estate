@@ -34,7 +34,7 @@ const HardWorking = () => {
           </Link>
         </div>
         <div className="hidden lg:flex col-span-6 p-5 justify-center text__wrap rounded-md relative">
-          <div className="h-[300px] w-[300px] !rounded-lg relative">
+          <div className="h-[350px] w-[350px] !rounded-lg relative">
             <Image
               src="/text.png"
               layout="fill"

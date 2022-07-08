@@ -12,7 +12,7 @@ const FeaturedHomes = ({ listingData }) => {
   };
 
   return (
-    <section className="w-full pt-8" id="featured__listings">
+    <section className="w-full pt-8" id="featured__listings" name="featured">
       <div className="max-w-[1300px] mx-auto p-4">
         <h2 className="mr-auto w-[305px] sm:w-full pb-4 text-xl font-bold dark:text-white dark:opacity-[.87]">
           Featured Listings

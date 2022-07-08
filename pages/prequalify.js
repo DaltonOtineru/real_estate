@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 import Footer from '../components/Footer/Footer';
 import MortgageCalc from '../components/MortgageCalc/MortgageCalc';
@@ -6,6 +7,9 @@ import Navigation from '../components/Navigation/Navigation';
 const prequalify = () => {
   return (
     <div id="root" className=" min-h-screen min-w-screen font-sans">
+      <Head>
+        <title>Mortgage Calculator | Berkshire Hathaway</title>
+      </Head>
       <main className="bg-white dark:bg-background w-full h-full font-sans ">
         <Navigation listingShadow guide />
         <section className="mt-[86px] pb-12">

@@ -18,6 +18,8 @@ const TeamCard = ({ src, name, title, smallCard }) => {
           layout="fill"
           objectFit="cover"
           className="rounded-lg"
+          alt={`Headshot of team member | ${name}`}
+          priority={!smallCard && true}
         />
       </div>
       <h3 className="dark:text-white font-bold pt-2 text-lg">{name}</h3>

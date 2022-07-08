@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Head from 'next/head';
 import React from 'react';
 import Footer from '../components/Footer/Footer';
 import Navigation from '../components/Navigation/Navigation';
@@ -7,6 +7,9 @@ import TeamCard from '../components/Team/TeamCard';
 const team = () => {
   return (
     <div id="root" className=" min-h-screen min-w-screen font-sans">
+      <Head>
+        <title>Our Team | Berkshire Hathaway</title>
+      </Head>
       <main className="bg-white dark:bg-background w-full h-full font-sans ">
         <Navigation listingShadow guide />
         <section className="mt-[86px] pb-12">

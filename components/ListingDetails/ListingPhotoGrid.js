@@ -53,14 +53,14 @@ const ListingPhotoGrid = ({ listing, imageSrcs }) => {
             </div>
             <div
               className="relative rounded-md w-full aspect-[16/10] cursor-pointer h-full"
-              onClick={() => openModal(`/details/${photoId}Two.webp`)}
+              onClick={() => openModal(`/details/${photoId}Four.webp`)}
             >
               <Image
                 src={`/details/${photoId}Two.webp`}
                 className="w-full h-full object-cover rounded-md hover:opacity-80 duration-200"
                 alt="Listing image of property"
                 layout="fill"
-              />{' '}
+              />
             </div>
           </div>
           <div className="hidden lg:grid grid-cols-1 col-span-3 gap-y-2">
