@@ -87,7 +87,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             Icon={UserGroupIcon}
             text="Our Team"
             iconClass="h-7 w-7 mr-1"
-            path="/"
+            path="/team"
             className="flex cursor-pointer"
           />
           <NavLink

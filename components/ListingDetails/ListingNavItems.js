@@ -5,14 +5,13 @@ export const listingNavItems = [
     text: 'Back',
     Icon: IoIosArrowBack,
   },
-  {
-    text: 'Overview',
-    hidden: true,
-  },
+
   {
     text: 'Property Details',
+    path: '#listing__description',
   },
   {
     text: 'Map',
+    path: '#listing__map',
   },
 ];

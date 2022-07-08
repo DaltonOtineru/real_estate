@@ -14,14 +14,25 @@ const FeaturedHome = ({ listing }) => {
       as={`listing/${_id}`}
       className="!cursor-pointer"
     >
-      <div className="mx-auto flex flex-col cursor-pointer max-w-[305px] justify-center">
-        <div className="home__wrap relative w-full h-full rounded-md overflow-hidden duration-200">
+      <div className="mx-auto flex flex-col cursor-pointer w-full md:max-w-[305px] justify-center">
+        <div className="home__wrap relative w-full h-full rounded-md overflow-hidden duration-200 hidden sm:inline">
+          {/* Small screen sizes & up Listing Image */}
           <Image
             src={coverPhoto}
             height={216}
             width={405}
             objectFit="cover"
-            className="hover:scale-105 duration-200"
+            className="hover:scale-105 duration-200 hidden"
+            alt={`${address} Photo`}
+          />
+        </div>
+        {/* Mobile Listing Image Below */}
+        <div className="home__wrap relative w-full h-[240px] rounded-md overflow-hidden duration-200 sm:hidden">
+          <Image
+            src={coverPhoto}
+            layout="fill"
+            objectFit="cover"
+            className="hover:scale-105 duration-200 hidden"
             alt={`${address} Photo`}
           />
         </div>

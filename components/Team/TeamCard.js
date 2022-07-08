@@ -21,7 +21,7 @@ const TeamCard = ({ src, name, title, smallCard }) => {
         />
       </div>
       <h3 className="dark:text-white font-bold pt-2 text-lg">{name}</h3>
-      <p className="dark:text-white/50 pb-2 font-medium">{title}</p>
+      <p className="dark:text-white/50 opacity-70 pb-2 font-medium">{title}</p>
       <div className="flex gap-2">
         <button className="flex-[.5] py-3 bg-[#1c1c1c] text-white font-bold dark:bg-white dark:text-black rounded-md">
           Call

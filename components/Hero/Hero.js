@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Hero = () => {
@@ -25,12 +26,16 @@ const Hero = () => {
               with us today.
             </p>
             <div className="flex w-full justify-start mt-4">
-              <button className="rounded-md bg-[#f3f3f3] text-[#121212] py-3 px-4 mr-3 border-transparent border-2 hover:bg-transparent hover:border-[#f3f3f3] hover:text-[#f3f3f3] duration-300 font-medium">
-                Browse Homes
-              </button>
-              <button className="rounded-md text-white border-[#f3f3f3] border-2 py-3 px-4  hover:border-[#52898a] hover:text-[#52898a] duration-300 ease font-medium">
-                Find An Agent
-              </button>
+              <a href="#featured__listings">
+                <button className="rounded-md bg-[#f3f3f3] text-[#121212] py-3 px-4 mr-3 border-transparent border-2 hover:bg-transparent hover:border-[#f3f3f3] hover:text-[#f3f3f3] duration-300 font-medium">
+                  Browse Homes
+                </button>
+              </a>
+              <Link href="/team">
+                <button className="rounded-md text-white border-[#f3f3f3] border-2 py-3 px-4  hover:border-[#52898a] hover:text-[#52898a] duration-300 ease font-medium">
+                  Find An Agent
+                </button>
+              </Link>
             </div>
           </div>
           <div className="flex justify-end col-span-6 pr-5">
@@ -45,21 +50,21 @@ const Hero = () => {
                 Receive a personalized estimate via email within 24hrs
               </p>
               <div className="flex flex-col mx-auto w-full">
-                <p className="text-xs dark:text-[#a7a7a7]">Full Name</p>
+                <label className="text-xs dark:text-[#a7a7a7]">Full Name</label>
                 <input
                   type="text"
                   className="bg dark:bg-[#333] rounded py-2 mb-4 focus:outline-none dark:text-white pl-2 bg-black bg-opacity-[.15] dark:bg-opacity-100"
                 />
               </div>
               <div className="flex flex-col">
-                <p className="text-xs dark:text-[#a7a7a7]">Email</p>
+                <label className="text-xs dark:text-[#a7a7a7]">Email</label>
                 <input
                   type="text"
                   className=" dark:bg-[#333] rounded py-2 mb-4 focus:outline-none dark:text-white pl-2 bg-black bg-opacity-[.15] dark:bg-opacity-100"
                 />
               </div>
               <div className="flex flex-col">
-                <p className="text-xs dark:text-[#a7a7a7]">Address</p>
+                <label className="text-xs dark:text-[#a7a7a7]">Address</label>
                 <input
                   type="text"
                   className=" dark:bg-[#333] rounded py-2 mb-4 focus:outline-none dark:text-white pl-2 bg-black bg-opacity-[.15] dark:bg-opacity-100"

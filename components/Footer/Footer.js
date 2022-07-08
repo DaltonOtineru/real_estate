@@ -4,7 +4,7 @@ import FooterLink from './FooterLink';
 const Footer = () => {
   return (
     <footer className="w-full mt-auto">
-      <div className="grid grid-cols-12 max-w-[90%] lg:max-w-[900px] mx-auto py-12">
+      <div className="grid grid-cols-12 max-w-[90%] lg:max-w-[900px] ml-[6.5rem] md:ml-[15rem] lg:mx-auto py-12">
         <div className="footer__section">
           <div className="lg:mx-auto flex flex-col">
             <h4 className="footer__header">Services</h4>
@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer__section">
           <div className="lg:mx-auto flex flex-col">
             <h4 className="footer__header">Company</h4>
-            <FooterLink text="Our Team" path="/" />
+            <FooterLink text="Our Team" path="/team" />
             <FooterLink text="Careers" path="/careers" />
             <FooterLink text="FAQ" path="/faq" />
           </div>

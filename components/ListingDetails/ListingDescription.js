@@ -66,7 +66,10 @@ const ListingDescription = ({ listing }) => {
             {sq}
           </div>
         </div>
-        <div className="py-4 flex flex-col border-b-[1px] dark:border-white/10">
+        <div
+          className="py-4 flex flex-col border-b-[1px] dark:border-white/10"
+          id="listing__description"
+        >
           <h3 className="text-xl dark:text-[#dfdede] font-bold">
             Property Description
           </h3>
@@ -115,7 +118,7 @@ const ListingDescription = ({ listing }) => {
             />
           </div>
         </div>
-        <section className="py-4">
+        <section className="py-4" id="listing__map">
           <ListingMap lat={lat} long={long} />
         </section>
       </div>

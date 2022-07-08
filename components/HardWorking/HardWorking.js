@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 
@@ -6,7 +7,7 @@ const HardWorking = () => {
   return (
     <section className="w-full py-16 px-4">
       <div className="grid grid-cols-12 mx-auto max-w-[1300px]">
-        <div className="flex flex-col col-span-12 lg:col-span-6 p-5">
+        <div className="flex flex-col col-span-12 lg:col-span-6 lg:p-5">
           <h3 className="text-sm dark:text-[#a7a7a7] font-bold">
             Hard Working Agents
           </h3>
@@ -25,10 +26,12 @@ const HardWorking = () => {
             We have Residential, Commercial, and Rental specialists ready to
             walk you through the process, no matter your needs.
           </blockquote>
-          <button className="rounded-md bg-[#1c1c1c] text-white hover:bg-opacity-70 dark:bg-[#f3f3f3] dark:text-[#121212] py-3 px-4 mr-3 border-transparent border-2 dark:hover:bg-transparent dark:hover:border-[#f3f3f3] dark:hover:text-[#f3f3f3] duration-300 font-medium max-w-[fit-content] flex items-center">
-            Find An Agent
-            <BsArrowRight className="inline ml-3" />
-          </button>
+          <Link href="/team">
+            <button className="rounded-md bg-[#1c1c1c] text-white hover:bg-opacity-70 dark:bg-[#f3f3f3] dark:text-[#121212] py-3 px-4 mr-3 border-transparent border-2 dark:hover:bg-transparent dark:hover:border-[#f3f3f3] dark:hover:text-[#f3f3f3] duration-300 font-medium max-w-[fit-content] flex items-center">
+              Find An Agent
+              <BsArrowRight className="inline ml-3" />
+            </button>
+          </Link>
         </div>
         <div className="hidden lg:flex col-span-6 p-5 justify-center text__wrap rounded-md relative">
           <div className="h-[300px] w-[300px] !rounded-lg relative">

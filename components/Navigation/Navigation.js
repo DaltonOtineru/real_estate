@@ -56,7 +56,7 @@ const Navigation = ({ listingShadow, guide }) => {
               className="flex items-center space-x-2 text-2xl h-full cursor-pointer"
             >
               <span
-                className={`text-xl md:text-2xl ${
+                className={`text-xl md:text-2xl font-medium ${
                   shadow || listingShadow ? 'text-black dark:text-white' : ''
                 }`}
               >
@@ -65,7 +65,7 @@ const Navigation = ({ listingShadow, guide }) => {
             </Link>
           </div>
           <nav
-            className={`hidden lg:flex items-center space-x-6 h-full text-lg ${
+            className={`hidden lg:flex items-center space-x-6 h-full text-lg mt-2 ${
               shadow || listingShadow
                 ? 'text-black dark:text-white'
                 : 'text-white'
@@ -75,7 +75,7 @@ const Navigation = ({ listingShadow, guide }) => {
               dropdownLink
               text="Services"
               path="/"
-              cName="cursor-pointer relative group  py-3 nav__item"
+              cName="cursor-pointer relative group font-medium  py-3 nav__item"
               dropData={servicesDrop}
               bottom="300px"
             />
@@ -83,7 +83,7 @@ const Navigation = ({ listingShadow, guide }) => {
               dropdownLink
               text="Our Team"
               path="/"
-              cName="cursor-pointer relative group py-3 nav__item"
+              cName="cursor-pointer relative group py-3 font-medium  nav__item"
               dropData={teamDrop}
               bottom="190px"
             />
@@ -91,13 +91,13 @@ const Navigation = ({ listingShadow, guide }) => {
               dropdownLink
               text="Learn"
               path="/"
-              cName="cursor-pointer relative group py-3 nav__item"
+              cName="cursor-pointer relative group py-3 font-medium  nav__item"
               dropData={learnDrop}
             />
             <NavLink
               text="Contact"
               path="/"
-              cName="cursor-pointer relative group py-3 nav__item"
+              cName="cursor-pointer relative group py-3 font-medium  nav__item"
             />
           </nav>
         </div>

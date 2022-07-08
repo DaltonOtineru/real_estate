@@ -21,7 +21,7 @@ export const servicesDrop = [
     title: 'Sell',
     text: 'List Your Home With Berkshire Hathaway',
     Icon: ShoppingBagIcon,
-    path: '/',
+    path: '/marketingguide',
   },
   {
     title: 'Rent',

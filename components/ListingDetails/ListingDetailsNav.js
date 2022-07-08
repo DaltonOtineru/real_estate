@@ -6,10 +6,10 @@ import { BsShare } from 'react-icons/bs';
 
 const ListingDetailsNav = () => {
   const renderlistingNav = () => {
-    return listingNavItems.map(({ text, Icon, hidden }) => (
-      <Link href="/" key={text}>
+    return listingNavItems.map(({ text, Icon, hidden, path }) => (
+      <Link href={path ? path : '/'} key={text}>
         <div
-          className={`cursor-pointer text-opacity-80 border-[1px] border-black border-opacity-20 hover:border-opacity-90 dark:text-white dark:text-opacity-[.65] dark:bg-[#333333] dark:hover:bg-[#3a3a3a] dark:hover:text-opacity-100 dark:border-none rounded-md flex items-center px-3 py-2 md:px-4 md:py-3 duration-200 font-bold text-sm md:text-base ${
+          className={`cursor-pointer text-opacity-80 border-[1px] border-black border-opacity-20 hover:border-opacity-90 dark:text-white dark:text-opacity-[.65] dark:bg-[#333333] dark:hover:bg-[#3a3a3a] dark:hover:text-opacity-100 dark:border-none rounded-md flex items-center  px-4 py-3 duration-200 font-bold text-base md:text-base ${
             Icon && 'lg:mr-6'
           } ${hidden && 'hidden sm:inline'}`}
         >
@@ -24,8 +24,8 @@ const ListingDetailsNav = () => {
     <section className="flex justify-between w-[95%] lg:w-full border-b border-black/60 dark:border-white dark:border-opacity-20 py-4 px-1 items-center mx-auto">
       <nav className="flex space-x-4">{renderlistingNav()}</nav>
       <div className="flex space-x-4">
-        <AiOutlineHeart className="dark:text-[#dfdede] text-3xl cursor-pointer hidden lg:inline" />
-        <BsShare className="dark:text-[#dfdede] text-3xl cursor-pointer hidden lg:inline" />
+        <AiOutlineHeart className="dark:text-[#dfdede] text-3xl cursor-pointer  lg:inline" />
+        <BsShare className="dark:text-[#dfdede] text-3xl cursor-pointer  lg:inline" />
       </div>
     </section>
   );
