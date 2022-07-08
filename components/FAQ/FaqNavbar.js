@@ -36,7 +36,7 @@ const FaqNavbar = ({ mobile }) => {
         mobile={mobile && true}
       />
       <FaqLink
-        text="Credit"
+        text={mobile ? 'Credit' : 'Credit Repair'}
         Icon={AdjustmentsIcon}
         path="#credit"
         mobile={mobile && true}

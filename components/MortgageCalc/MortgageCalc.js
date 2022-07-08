@@ -8,27 +8,40 @@ const MortgageCalc = () => {
     interest: 3.9,
   });
 
+  // Calculate loan amount //
+  const totalLoan = loan.salePrice - loan.downPmnt;
+
+  // Calculate percentage of downpayment //
   const downPercent = (loan.downPmnt / loan.salePrice) * 100;
 
-  const totalLoan = loan.salePrice - loan.downPmnt;
-  const int = (totalLoan * loan.interest) / 100;
+  // Total months for the loan length //
+  const termMonths = loan.term * 12;
 
-  const monthly = totalLoan / (loan.term * 12);
+  // calculate interest to decimal //
+  const percentageInt = loan.interest / 100;
 
-  const monthlyWithInterest = int + monthly;
+  //calculate the monthly payment w/out interest //
+  const monthly = totalLoan / termMonths;
 
-  console.log(monthly);
+  // total interest amount before dividing monthly //
+  const interestAmount = totalLoan * percentageInt;
+
+  // monthly interest to be added to each monthly payment //
+  const monthlyInterest = interestAmount / 12;
+
+  // Final monthly price with interest //
+  const monthlyWithInterest = monthly + monthlyInterest;
 
   return (
-    <section className="grid grid-cols-12 w-full lg:max-w-5xl gap-4 mx-auto min-h-[50vh]">
-      <div className="col-span-12 lg:col-span-6 flex flex-col">
-        <h2 className="font-extrabold text-[2rem] pb-4">Mortgage Calculator</h2>
-        <p className="text-[1rem] pb-8 font-bold text-[#4a5359] dark:text-[#7c8b94]">
+    <section className="grid grid-cols-12 w-full md:max-w-3xl gap-y-12 lg:gap-10 mx-auto min-h-[50vh] px-6 lg:px-0 ">
+      <div className="col-span-12  flex flex-col">
+        <h2 className="font-extrabold text-4xl pb-4">Mortgage Calculator</h2>
+        <p className="text-[1rem] pb-8 font-bold text-accent dark:text-[#7c8b94]">
           Find Your Comfortable Price Range
         </p>
-        <div className="grid grid-cols-12 w-full gap-x-4 gap-y-10">
+        <div className="grid grid-cols-12 w-full gap-x-4 gap-y-14">
           <div className="col-span-6 flex flex-col">
-            <p className="font-light pb-6 text-sm">
+            <p className="font-medium pb-6 text-sm">
               Sale Price |{' '}
               <span className="font-extrabold">${loan.salePrice / 1000}k</span>
             </p>
@@ -43,7 +56,7 @@ const MortgageCalc = () => {
             />
           </div>
           <div className="col-span-6 flex flex-col">
-            <p className="font-light pb-6 text-sm">
+            <p className="font-medium pb-6 text-sm">
               Down Pmnt. |{' '}
               <span className="font-extrabold">${loan.downPmnt / 1000}k</span>
             </p>
@@ -58,7 +71,7 @@ const MortgageCalc = () => {
             />
           </div>
           <div className="col-span-6 flex flex-col">
-            <p className="font-light pb-6 text-sm">
+            <p className="font-medium pb-6 text-sm">
               Term | <span className="font-extrabold">{loan.term}yrs</span>
             </p>
             <input
@@ -72,7 +85,7 @@ const MortgageCalc = () => {
             />
           </div>
           <div className="col-span-6 flex flex-col">
-            <p className="font-light pb-6 text-sm">
+            <p className="font-medium pb-6 text-sm">
               Interest |{' '}
               <span className="font-extrabold">{loan.interest}%</span>
             </p>
@@ -88,13 +101,17 @@ const MortgageCalc = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-12 lg:col-span-6">
-        <div className="flex flex-col w-full border-2 dark:border-white rounded-lg h-[500px] py-8">
-          <h2 className="text-center text-6xl font-extrabold">
+      <div className="col-span-12 ">
+        <div className="flex flex-col w-full border-2 justify-center items-center border-black dark:border-white/80 rounded-lg h-[300px] py-8 gap-y-4">
+          <h2 className="text-center text-6xl md:text-7xl font-extrabold">
             ${monthlyWithInterest.toFixed(0)}/mo.
           </h2>
-          <p className="text-center">
-            Monthly payment based on {downPercent.toFixed(0)}% down payment
+          <p className="text-center text-lg font-medium text-[#4a5359] dark:text-white/50">
+            Monthly payment based on{' '}
+            <span className="font-extrabold text-accent dark:text-[#7c8b94] ">
+              {downPercent.toFixed(0)}%
+            </span>{' '}
+            down payment
           </p>
         </div>
       </div>

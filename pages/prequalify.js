@@ -11,7 +11,7 @@ const prequalify = () => {
         <section className="mt-[86px] pb-12">
           <div className="w-full py-12">
             <div className="w-full  px-4 flex flex-col items-center justify-center border-b-[1px] border-black/20 dark:border-white/10 mx-auto pb-6 xl:max-w-7xl">
-              <h1 className="font-extrabold text-3xl text-center pb-4">
+              <h1 className="font-extrabold text-2xl sm:text-3xl text-center pb-4">
                 Start The Pre-Qualification Process
               </h1>
               <p className="text-center text-medium font-medium">
