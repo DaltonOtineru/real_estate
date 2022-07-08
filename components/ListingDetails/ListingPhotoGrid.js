@@ -56,7 +56,7 @@ const ListingPhotoGrid = ({ listing, imageSrcs }) => {
               onClick={() => openModal(`/details/${photoId}Four.webp`)}
             >
               <Image
-                src={`/details/${photoId}Two.webp`}
+                src={`/details/${photoId}Four.webp`}
                 className="w-full h-full object-cover rounded-md hover:opacity-80 duration-200"
                 alt="Listing image of property"
                 layout="fill"
