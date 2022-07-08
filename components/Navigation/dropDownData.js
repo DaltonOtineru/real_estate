@@ -41,7 +41,7 @@ export const teamDrop = [
     title: 'Our Team',
     text: 'Meet the realtors and office behind Berkshire Hathaway',
     Icon: UserGroupIcon,
-    path: '/',
+    path: '/team',
   },
   {
     title: 'Become A Realtor',

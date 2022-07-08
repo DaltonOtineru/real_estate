@@ -19,29 +19,6 @@ const NavLink = ({
 }) => {
   const [dropdown, setDropdown] = useState(false);
 
-  const dropDownData = [
-    {
-      title: 'Buy',
-      text: 'Browse Coastal Bend Listings',
-      Icon: MapIcon,
-    },
-    {
-      title: 'Sell',
-      text: 'List Your Home With Berkshire Hathaway',
-      Icon: ShoppingBagIcon,
-    },
-    {
-      title: 'Rent',
-      text: 'Find Your Next Rental and Start An Application',
-      Icon: KeyIcon,
-    },
-    {
-      title: 'Mortgage Calculator',
-      text: 'Crunch the numbers | Determine your home budget',
-      Icon: CalculatorIcon,
-    },
-  ];
-
   return (
     <div className={cName}>
       <Link href={path}>
@@ -58,7 +35,7 @@ const NavLink = ({
       </Link>
       {dropdownLink && (
         <div
-          className={`group-hover:flex hidden absolute -bottom-${bottom} -left-10 bg-white dark:bg-[#1c1c1c] text-black/90 w-[450px] py-10 px-12 rounded-xl z-[60] mt-2 duration-200 shadow-2xl`}
+          className={`group-hover:flex hidden absolute -bottom-${bottom} -left-10 bg-white dark:bg-[#1c1c1c] text-black/90 w-[450px] py-10 px-12 rounded-xl z-[60] mt-2 transition duration-500 shadow-2xl`}
         >
           <div className="flex flex-col">
             <ul className="flex flex-col space-y-4">

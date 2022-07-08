@@ -26,7 +26,7 @@ const ListingPage = ({ listing }) => {
         <title>{listing.address} | Berkshire Hathaway</title>
       </Head>
       <Navigation listingShadow />
-      <section className="mt-[76px] pt-10 lg:max-w-[1120px] lg:px-3 mx-auto w-full xl:px-0">
+      <section className="mt-[76px] pt-10 lg:max-w-[1120px] lg:px-3 mx-auto w-full xl:px-0 max-w-screen">
         <ListingDetailsNav />
         <ListingPhotoGrid listing={listing} imageSrcs={imageSrcs} />
         <ListingDescription listing={listing} />

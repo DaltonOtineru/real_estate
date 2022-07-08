@@ -55,7 +55,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             Icon={CalculatorIcon}
             text="Mortgage Calculator"
             iconClass="h-7 w-7 mr-1"
-            path="/"
+            path="/prequalify"
             className="flex cursor-pointer"
           />
         </div>

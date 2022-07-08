@@ -19,14 +19,24 @@
     --primary: #000;
     --muted: #242424;
   }
-  .nav__item .animated__underline {
+  .dark .nav__item .animated__underline {
     width: 0;
     border-bottom: 2px solid #fff;
   }
 
-  .nav__item:hover .animated__underline {
+  .dark .nav__item:hover .animated__underline {
     width: 20px;
     border-bottom: 2px solid #fff;
+    transition: width 0.2s;
+  }
+  .nav__item .animated__underline {
+    width: 0;
+    border-bottom: 2px solid #000;
+  }
+
+  .nav__item:hover .animated__underline {
+    width: 20px;
+    border-bottom: 2px solid #000;
     transition: width 0.2s;
   }
 
@@ -70,6 +80,6 @@
     @apply py-1 lg:py-2 text-black/70 hover:opacity-50 dark:text-white dark:opacity-[.37] dark:hover:opacity-[.65] cursor-pointer;
   }
   .calc__input {
-    @apply dark:bg-white/30 h-2 rounded-md;
+    @apply dark:bg-white h-2 rounded-md;
   }
 }

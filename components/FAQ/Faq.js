@@ -12,7 +12,7 @@ import FaqNavbar from './FaqNavbar';
 const Faq = () => {
   return (
     <div className="mx-auto w-[95%] max-w-6xl flex items-start relative">
-      <div className="hidden lg:block w-1/5 relative lg:h-[200vh]">
+      <div className="hidden lg:block w-1/5 relative lg:h-[210vh]">
         <div className="lg:sticky lg:top-40">
           <aside className="">
             <ul className="flex flex-col gap-y-2">

@@ -8,6 +8,9 @@ import Navigation from '../components/Navigation/Navigation';
 import GuideForm from '../components/GuideForm/GuideForm';
 
 const buyersguide = () => {
+  const formHeader = 'Schedule A Consultation';
+  const subHeader = 'Let us help you into your next home';
+
   return (
     <div id="root" className=" min-h-screen min-w-screen font-sans">
       <main className="bg-white dark:bg-background w-full h-full font-sans">
@@ -25,7 +28,11 @@ const buyersguide = () => {
           </div>
           <div className="grid grid-cols-12 px-6 lg:px-12 lg:space-x-12 mx-auto xl:max-w-7xl ">
             <GuideList guideData={buyersGuideData} />
-            <GuideForm inputLabel="Phone" />
+            <GuideForm
+              inputLabel="Phone"
+              header={formHeader}
+              subHeader={subHeader}
+            />
           </div>
         </section>
         <Footer />

@@ -10,23 +10,23 @@ const Footer = () => {
             <h4 className="footer__header">Services</h4>
             <FooterLink text="Browse For Sale" path="/" />
             <FooterLink text="Browse Rentals" path="/" />
-            <FooterLink text="List Your Property" path="/" />
+            <FooterLink text="List Your Property" path="/marketingguide" />
           </div>
         </div>
         <div className="footer__section">
           <div className="lg:mx-auto flex flex-col">
             <h4 className="footer__header">Company</h4>
             <FooterLink text="Our Team" path="/" />
-            <FooterLink text="Careers" path="/" />
-            <FooterLink text="FAQ" path="/" />
+            <FooterLink text="Careers" path="/careers" />
+            <FooterLink text="FAQ" path="/faq" />
           </div>
         </div>
         <div className="footer__section">
           <div className="lg:mx-auto flex flex-col">
             <h4 className="footer__header">Learn</h4>
-            <FooterLink text="Buyers Guide" path="/" />
-            <FooterLink text="Sellers Guide" path="/" />
-            <FooterLink text="Mortgage Calculator" path="/" />
+            <FooterLink text="Buyers Guide" path="/buyersguide" />
+            <FooterLink text="Sellers Guide" path="/marketingguide" />
+            <FooterLink text="Mortgage Calculator" path="/prequalify" />
           </div>
         </div>
         <div className="footer__section">
