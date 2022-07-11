@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Berkshire Hathaway | Real Estate Application
 
-## Getting Started
+## [Live Site](https://berkshire-hathaway-six.vercel.app/)
 
-First, run the development server:
+## Project Description
 
-```bash
-npm run dev
-# or
-yarn dev
+<!-- Twitter inspired social media application built out with React JS. Users can create posts, like posts, and comment on posts. Firebase is integrated for storing and fetching all posts, comments, likes and user info such as profile picture, display name and user authentication data. The app also uses Firebase for user authentication to register or log in users. Utilizes Redux to share state between components, including user information. React Router allows users to view individual post pages. Individual posts are displayed on their correlated pages and React Router is used to navigate through the site. -->
+
+Next.js application for a real estate company advertising services they provide, as well as property listing details. The build prioritized using dynamic, reusable components to keep the codebase clean and optimized. Each listing has its own dedicated page with all property details, images and interactive map showing the exact location. The site provides secure user authentication with Next Auth via the users Google, Facebook or Twitter account login credentials. Fully responsive application, styled with Tailwind CSS mobile first. Features a toggle for the user to switch between light / dark theme.
+
+## Technologies Used
+
+- Next.js
+- React.js
+- Tailwind CSS
+- Mapbox
+- Next Auth
+
+![Berkshire Hathaway Real Estate Application](/public/readme/bhreadme1.png)
+
+![Berkshire Hathaway Real Estate Application](/public/readme/bhreadme3.png)
+
+![Berkshire Hathaway Real Estate Application](/public/readme/bhreadme4.png)
+
+![Berkshire Hathaway Real Estate Application](/public/readme/bhreadme5.png)
+
+## Quick Start
+
+Download the zip file of the project or clone the repo on your machine.
+
+```
+$ git clone https://github.com/DaltonOtineru/real_estate.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+In the project directory, you can run:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### `npm install`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+This will install necessary dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Still in the project directory, you can run:
 
-## Learn More
+### `npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+This runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The page will reload when you make changes.

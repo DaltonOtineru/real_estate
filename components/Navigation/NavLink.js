@@ -1,9 +1,3 @@
-import {
-  CalculatorIcon,
-  KeyIcon,
-  MapIcon,
-  ShoppingBagIcon,
-} from '@heroicons/react/outline';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
@@ -16,11 +10,15 @@ const NavLink = ({
   dropdownLink,
   dropData,
   bottom,
+  handleMobileMenu,
 }) => {
   const [dropdown, setDropdown] = useState(false);
 
   return (
-    <div className={cName}>
+    <div
+      className={cName}
+      onClick={!dropdownLink ? () => handleMobileMenu() : () => {}}
+    >
       <Link href={path}>
         <div
           className="flex cursor-pointer nav__item"

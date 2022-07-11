@@ -34,8 +34,9 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             Icon={MapIcon}
             text="Browse Listings For Sale"
             iconClass="h-7 w-7 mr-1"
-            path="/"
+            path="#featured__listings"
             className="flex cursor-pointer"
+            handleMobileMenu={handleMobileMenu}
           />
           <NavLink
             Icon={ShoppingBagIcon}
@@ -43,6 +44,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             iconClass="h-7 w-7 mr-1"
             path="/"
             className="flex cursor-pointer"
+            handleMobileMenu={handleMobileMenu}
           />
           <NavLink
             Icon={KeyIcon}
@@ -50,6 +52,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             iconClass="h-7 w-7 mr-1"
             path="/"
             className="flex cursor-pointer"
+            handleMobileMenu={handleMobileMenu}
           />
           <NavLink
             Icon={CalculatorIcon}
@@ -57,6 +60,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             iconClass="h-7 w-7 mr-1"
             path="/prequalify"
             className="flex cursor-pointer"
+            handleMobileMenu={handleMobileMenu}
           />
         </div>
         <div className="flex flex-col dark:text-white/90 text-lg space-y-4 py-8 border-b-[1px]  border-black/30 dark:border-white/20">
@@ -66,6 +70,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             iconClass="h-7 w-7 mr-1"
             path="/buyersguide"
             className="flex cursor-pointer"
+            handleMobileMenu={handleMobileMenu}
           />
           <NavLink
             Icon={BeakerIcon}
@@ -73,6 +78,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             iconClass="h-7 w-7 mr-1"
             path="/marketingguide"
             className="flex cursor-pointer"
+            handleMobileMenu={handleMobileMenu}
           />
           <NavLink
             Icon={PuzzleIcon}
@@ -80,6 +86,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             iconClass="h-7 w-7 mr-1"
             path="/faq"
             className="flex cursor-pointer"
+            handleMobileMenu={handleMobileMenu}
           />
         </div>
         <div className="flex flex-col dark:text-white/90 text-lg space-y-4 py-8 border-b-[1px]  border-black/30 dark:border-white/20">

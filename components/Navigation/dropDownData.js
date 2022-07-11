@@ -15,7 +15,7 @@ export const servicesDrop = [
     title: 'Buy',
     text: 'Browse Coastal Bend Listings',
     Icon: MapIcon,
-    path: '/',
+    path: '#featured__listings',
   },
   {
     title: 'Sell',

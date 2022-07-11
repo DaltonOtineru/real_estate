@@ -53,10 +53,10 @@ const ListingPhotoGrid = ({ listing, imageSrcs }) => {
             </div>
             <div
               className="relative rounded-md w-full aspect-[16/10] cursor-pointer h-full"
-              onClick={() => openModal(`/details/${photoId}Four.webp`)}
+              onClick={() => openModal(`/details/${photoId}Two.webp`)}
             >
               <Image
-                src={`/details/${photoId}Four.webp`}
+                src={`/details/${photoId}Two.webp`}
                 className="w-full h-full object-cover rounded-md hover:opacity-80 duration-200"
                 alt="Listing image of property"
                 layout="fill"
