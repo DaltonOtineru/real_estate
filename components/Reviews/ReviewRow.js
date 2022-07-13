@@ -9,6 +9,7 @@ const ReviewRow = ({ rowData, hiddenThird, isExpanded }) => {
             data={data}
             isExpanded={isExpanded}
             hiddenThird={hiddenThird}
+            key={data.name}
           />
         );
       })}
