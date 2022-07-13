@@ -82,4 +82,10 @@
   .calc__input {
     @apply dark:bg-white h-2 rounded-md;
   }
+  .contact__input {
+    @apply py-2 pl-1 rounded-md my-1 outline-none dark:bg-[#1c1c1c];
+  }
+  .contact__detail {
+    @apply dark:opacity-50;
+  }
 }

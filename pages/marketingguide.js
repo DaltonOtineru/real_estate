@@ -11,7 +11,7 @@ const marketingGuide = () => {
   const subHeader = 'Receive a personalized estimate via email within 24hrs';
 
   return (
-    <div id="root" className=" min-h-screen min-w-screen font-sans">
+    <div id="root" className=" min-w-screen font-sans">
       <Head>
         <title>Marketing Guide | Berkshire Hathaway</title>
       </Head>

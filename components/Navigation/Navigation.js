@@ -96,7 +96,7 @@ const Navigation = ({ listingShadow, guide }) => {
             />
             <NavLink
               text="Contact"
-              path="/"
+              path="/contact"
               cName="cursor-pointer relative group py-3 font-medium  nav__item"
             />
           </nav>

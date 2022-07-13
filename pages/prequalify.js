@@ -6,7 +6,7 @@ import Navigation from '../components/Navigation/Navigation';
 
 const prequalify = () => {
   return (
-    <div id="root" className=" min-h-screen min-w-screen font-sans">
+    <div id="root" className="min-w-screen font-sans">
       <Head>
         <title>Mortgage Calculator | Berkshire Hathaway</title>
       </Head>

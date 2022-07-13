@@ -37,6 +37,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             path="#featured__listings"
             className="flex cursor-pointer"
             handleMobileMenu={handleMobileMenu}
+            sidebarLink
           />
           <NavLink
             Icon={ShoppingBagIcon}
@@ -45,6 +46,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             path="/"
             className="flex cursor-pointer"
             handleMobileMenu={handleMobileMenu}
+            sidebarLink
           />
           <NavLink
             Icon={KeyIcon}
@@ -53,6 +55,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             path="/"
             className="flex cursor-pointer"
             handleMobileMenu={handleMobileMenu}
+            sidebarLink
           />
           <NavLink
             Icon={CalculatorIcon}
@@ -61,6 +64,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             path="/prequalify"
             className="flex cursor-pointer"
             handleMobileMenu={handleMobileMenu}
+            sidebarLink
           />
         </div>
         <div className="flex flex-col dark:text-white/90 text-lg space-y-4 py-8 border-b-[1px]  border-black/30 dark:border-white/20">
@@ -71,6 +75,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             path="/buyersguide"
             className="flex cursor-pointer"
             handleMobileMenu={handleMobileMenu}
+            sidebarLink
           />
           <NavLink
             Icon={BeakerIcon}
@@ -79,6 +84,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             path="/marketingguide"
             className="flex cursor-pointer"
             handleMobileMenu={handleMobileMenu}
+            sidebarLink
           />
           <NavLink
             Icon={PuzzleIcon}
@@ -87,6 +93,7 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             path="/faq"
             className="flex cursor-pointer"
             handleMobileMenu={handleMobileMenu}
+            sidebarLink
           />
         </div>
         <div className="flex flex-col dark:text-white/90 text-lg space-y-4 py-8 border-b-[1px]  border-black/30 dark:border-white/20">
@@ -96,6 +103,8 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             iconClass="h-7 w-7 mr-1"
             path="/team"
             className="flex cursor-pointer"
+            handleMobileMenu={handleMobileMenu}
+            sidebarLink
           />
           <NavLink
             Icon={SparklesIcon}
@@ -103,6 +112,8 @@ const MobileNav = ({ mobileMenu, handleMobileMenu }) => {
             iconClass="h-7 w-7 mr-1"
             path="/careers"
             className="flex cursor-pointer"
+            handleMobileMenu={handleMobileMenu}
+            sidebarLink
           />
         </div>
         <div className="w-full">

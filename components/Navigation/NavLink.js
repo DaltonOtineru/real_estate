@@ -11,13 +11,14 @@ const NavLink = ({
   dropData,
   bottom,
   handleMobileMenu,
+  sidebarLink,
 }) => {
   const [dropdown, setDropdown] = useState(false);
 
   return (
     <div
       className={cName}
-      onClick={!dropdownLink ? () => handleMobileMenu() : () => {}}
+      onClick={sidebarLink ? () => handleMobileMenu() : () => {}}
     >
       <Link href={path}>
         <div
