@@ -18,7 +18,7 @@ const contact = () => {
                 Contact Us
               </h1>
               <p className="text-center text-medium font-medium">
-                We'd love to hear from you!
+                We&apos;d love to hear from you!
               </p>
             </div>
           </div>
