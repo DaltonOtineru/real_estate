@@ -24,7 +24,7 @@ const team = () => {
               </p>
             </div>
           </div>
-          <section className="w-[95%] lg:w-3/4 mx-auto max-w-6xl">
+          <section className="w-[95%] lg:w-3/4 mx-auto max-w-6xl pb-8">
             <div className="flex flex-col px-1 lg:px-0">
               <h2 className="text-3xl font-bold pb-2">Office</h2>
               <div className="grid grid-cols-12 gap-y-8 gap-2 lg:gap-10 pb-10">

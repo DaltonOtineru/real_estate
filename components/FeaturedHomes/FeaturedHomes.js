@@ -20,13 +20,6 @@ const FeaturedHomes = ({ listingData }) => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-4 pb-8">
           {renderFeatured()}
         </div>
-
-        {/* <Link href="/">
-          <div className=" text-black hover:text-opacity-75 dark:text-white dark:text-opacity-40 group dark:hover:text-opacity-[.87] cursor-pointer duration-200 text-lg mx-auto w-[305px] sm:w-full">
-            Browse All Listings
-            <BsArrowRight className="inline ml-2 dark:group-hover:opacity-[.87] group-hover:translate-x-1 text-lg font-extrabold group-hover:text-xl duration-200" />
-          </div>
-        </Link> */}
       </div>
     </section>
   );

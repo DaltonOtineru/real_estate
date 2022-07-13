@@ -26,8 +26,8 @@ const ListingDetailsNav = () => {
     <section className="flex justify-between w-[95%] lg:w-full border-b border-black/60 dark:border-white dark:border-opacity-20 py-4 px-1 items-center mx-auto">
       <nav className="flex space-x-4">{renderlistingNav()}</nav>
       <div className="flex space-x-4">
-        <AiOutlineHeart className="dark:text-[#dfdede] text-3xl cursor-pointer  lg:inline" />
-        <BsShare className="dark:text-[#dfdede] text-3xl cursor-pointer  lg:inline" />
+        <AiOutlineHeart className="dark:text-[#dfdede] text-3xl cursor-pointer hidden md:inline" />
+        <BsShare className="dark:text-[#dfdede] text-3xl cursor-pointer  hidden md:inline" />
       </div>
     </section>
   );

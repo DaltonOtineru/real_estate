@@ -9,6 +9,7 @@ import Toolbreak from '../components/Toolbreak/Toolbreak';
 import FeaturedHomes from '../components/FeaturedHomes/FeaturedHomes';
 import Layout from '../components/Layout/Layout';
 import { listingData } from '../data/listingsData';
+import Reviews from '../components/Reviews/Reviews';
 
 export default function Home({ listingData }) {
   const [mounted, setMounted] = useState(false);
@@ -35,6 +36,7 @@ export default function Home({ listingData }) {
             <Transactions />
             <Perks />
             <Toolbreak />
+            <Reviews />
           </Layout>
         </main>
       )}

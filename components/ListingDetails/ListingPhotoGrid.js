@@ -30,7 +30,7 @@ const ListingPhotoGrid = ({ listing, imageSrcs }) => {
               className="w-full h-full aspect-[16/10] relative rounded-xl cursor-pointer"
               onClick={() => openModal(coverPhoto)}
             >
-              <ViewGridIcon className="text-black h-10  w-10  absolute lg:hidden bg-white rounded-md top-1.5 right-1.5 z-[100] p-2 " />
+              <ViewGridIcon className="text-black h-10  w-10  absolute lg:hidden bg-white rounded-md top-1.5 right-1.5 z-40 p-2 " />
               <Image
                 src={coverPhoto}
                 className="w-full h-full object-cover rounded-md hover:opacity-80 duration-200"

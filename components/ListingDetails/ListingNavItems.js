@@ -4,7 +4,7 @@ export const listingNavItems = [
   {
     text: 'Back',
     Icon: IoIosArrowBack,
-    path: '/#featured',
+    path: '/',
   },
 
   {
